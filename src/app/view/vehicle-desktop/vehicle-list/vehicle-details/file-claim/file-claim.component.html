@@ -1,0 +1,25 @@
+
+<div class="col details-wrapper overflow-hidden px-0" id="{{ data[idUniqueField] + '_adesa-assurance-status_wrapper' }}">
+		<div class="col d-sm-flex px-0">
+			<span> <span class="assurance-icon assurance-icon-enabled" id="{{ data[idUniqueField] + '_adesa-assurance_img' }}"></span> </span>
+			<span class="col row px-0 ml-2">
+				<span class=" col px-0 row">
+					<div class="col pr-2 pl-0">
+            <p class="mb-1 font-wt-500"  id="{{ data[idUniqueField] + '_adesa-assurance-status_header' }}">{{ headTitle.assuranceStatus}}</p>
+            <p class="mb-0 color-slight-black" id="{{ data[idUniqueField] + '_adesa-assurance_status_and_date' }}">{{localAssuranceStatusUi[data?.adesaAssuranceStatus]}} &nbsp; <span *ngIf="data?.adesaAssuranceStatus != localAssuranceStatus.NOT_PURCHASED">{{data?.adesaAssuranceDate}}</span></p>
+            <span *ngIf="data?.adesaAssuranceStatus == localAssuranceStatus.PURCHASED && data?.adesaAssuranceEligible == true">
+              <p class="mb-0 eligible-text" id="{{ data[idUniqueField] + '_file-claim_eligibility_until' }}" *ngIf="data?.eligibleUntilFormatted && data?.assuranceExpired != true">Claim Period Until &nbsp;{{data?.eligibleUntilFormatted}}</p>
+              <p class="mb-0 eligible-text" id="{{ data[idUniqueField] + '_file-claim_eligibility_expired' }}" *ngIf="data?.eligibleUntilFormatted && data?.assuranceExpired == true">Claim Period Expired &nbsp;{{data?.eligibleUntilFormatted}}</p>
+            </span>
+            <span *ngIf="data?.adesaAssuranceStatus == localAssuranceStatus.NOT_PURCHASED && data?.assurancePaid == false">
+              <p class="mb-0 eligible-text" id="{{ data[idUniqueField] + '_file-claim_not_enrolled' }}" >Not Enrolled</p>
+            </span>
+            <span *ngIf="data?.adesaAssuranceStatus == localAssuranceStatus.NOT_PURCHASED && data?.assurancePaid == true">
+              <p class="mb-0 eligible-text" id="{{ data[idUniqueField] + '_file-claim_eligible' }}" *ngIf="data?.adesaAssuranceEligible == true">Eligible</p>
+              <p class="mb-0 eligible-text" id="{{ data[idUniqueField] + '_file-claim_not_eligible' }}" *ngIf="data?.adesaAssuranceEligible == false">Not Eligible</p>
+            </span>
+					</div>
+        </span>
+      </span>
+    </div>
+</div>

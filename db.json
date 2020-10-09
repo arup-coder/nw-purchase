@@ -1,0 +1,1773 @@
+{
+    "getVehicles": {
+        "message": "success",
+        "content": {
+            "vehicles":[
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-05-20T11:07:33.567Z",
+                  "modifiedAt": "2020-06-03T12:47:13.621Z",
+                  "originVehicleId": "530015611",
+                  "arId": null,
+                  "nwVehicleId": "1a99815b-6521-58b8-8926-deeae131f08f",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "546474",
+                  "purchaserFirstName": "MUSTAFA",
+                  "purchaserLastName": "BAKIR",
+                  "purchaserLoginName": "mustafabakir",
+                  "soldDate": "1576617480000",
+                  "year": 2008,
+                  "make": "BMW",
+                  "model": "5 SERIES",
+                  "series": "550I",
+                  "trim": null,
+                  "vin": "WBANW53578CT54274",
+                  "locationCity": "SANFORD",
+                  "stateAbbreviation": "FL",
+                  "odometer": 94277,
+                  "odometerUnitOfMeasure": "mi",
+                  "exteriorColor": "BLUE",
+                  "interiorColor": null,
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "08647c51-a9e8-4e09-afba-abb402a636bf",
+                  "auctionChannelValue": "Simulcast",
+                  "assurancePaid": "0",
+                  "assuranceOriginTimestamp": "1590425653",
+                  "eligibleUntil": null,
+                  "locationId": "7b1ca631-facf-5e64-ace9-f3b2a20e6834",
+                  "vinTrimmed": "T54274",
+                  "vehicleTitle": "2008 BMW 5 SERIES  550I",
+                  "soldDateMMDDYY": "12/17/19",
+                  "adesaAssuranceDate ": "01/19/70",
+                  "location": {
+                    "nwLocationId": "7b1ca631-facf-5e64-ace9-f3b2a20e6834",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-20T11:07:33.504Z",
+                    "modifiedAt": "2020-05-20T11:07:33.504Z"
+                  },
+                  "purchases": {
+                    "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                    "createdAt": "2020-05-20T13:11:18.152Z",
+                    "modifiedAt": "2020-05-20T13:11:18.152Z",
+                    "vehicleId": "1a99815b-6521-58b8-8926-deeae131f08f",
+                    "buyerOrganizationId": null,
+                    "originVehicleId": "530967874",
+                    "source": "AMS",
+                    "currency": "CAD",
+                    "vehicleStatus": "ACTIVE",
+                    "totalAmountCents": "2941950",
+                    "totalAmountDueCents": "60180",
+                    "purchaseDate": "1589454600",
+                    "originTimestamp": "1589454600",
+                    "amount": 29419.5,
+                    "lineItems": [
+                      {
+                        "lineItemId": "5bd9c0b6-f482-4703-b363-7f1ec11bc684",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "2500000",
+                        "lineItemType": "PURCHASE_PRICE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Vehicle",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 25000,
+                        "taxes": [
+                          {
+                            "lineItemId": "b4a55654-fabc-42f7-a0b3-a99399f73eae",
+                            "amount": 3250,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "2766506c-b110-4243-aa1b-55666269db25",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "25000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Buy Fee",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 250,
+                        "taxes": [
+                          {
+                            "lineItemId": "c628fd3c-8f37-4780-a8ed-eef997dbb19d",
+                            "amount": 32.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "3137a42d-4e76-4e7e-b43d-64445b0043d1",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "5000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Title",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 50,
+                        "taxes": [
+                          {
+                            "lineItemId": "2a89f7db-3ba5-4fab-a43c-a7614cd6d2ba",
+                            "amount": 6.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "claim": {
+                    "status": "Closed",
+                    "submitDate": "01/19/70",
+                    "resolutionDate": "01/19/70",
+                    "originTimestamp": "01/19/70"
+                  },
+                  "psi": {
+                    "status": "Rejected",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "arbitration": {
+                    "status": "Closed",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "titleStatus": {
+                    "status": "Released",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXWQ589",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "01/19/70",
+                    "releasedDate": "01/19/70",
+                    "receivedDate": "01/19/70",
+                    "shippedDate": "01/19/70"
+                  }
+                },
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-05-20T12:01:56.753Z",
+                  "modifiedAt": "2020-06-03T09:42:14.959Z",
+                  "originVehicleId": "524427456",
+                  "arId": null,
+                  "nwVehicleId": "14c47cd1-d84a-5aa7-bfde-0e2508a973ff",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "635114",
+                  "purchaserFirstName": "ERIC",
+                  "purchaserLastName": "MAILHOT",
+                  "purchaserLoginName": "Automeminc",
+                  "soldDate": "1574874120000",
+                  "year": 2015,
+                  "make": "KIA",
+                  "model": "SORENTO",
+                  "series": null,
+                  "trim": null,
+                  "vin": "5XYKTDA71FG597133",
+                  "locationCity": "ST. EUSTACHE",
+                  "stateAbbreviation": "QC",
+                  "odometer": 91939,
+                  "odometerUnitOfMeasure": "km",
+                  "exteriorColor": "BLACK",
+                  "interiorColor": "BLACK",
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "d9d478fc-2ac7-4ec0-9fc3-b8242d97cfb5",
+                  "auctionChannelValue": "Inlane",
+                  "assurancePaid": "0",
+                  "assuranceOriginTimestamp": "1590425653",
+                  "eligibleUntil": null,
+                  "locationId": "f284c991-72af-5438-bda4-bae16498d2dc",
+                  "vinTrimmed": "597133",
+                  "vehicleTitle": "2015 KIA SORENTO  ",
+                  "soldDateMMDDYY": "11/27/19",
+                  "adesaAssuranceDate ": "01/19/70",
+                  "location": {
+                    "nwLocationId": "f284c991-72af-5438-bda4-bae16498d2dc",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-20T12:01:56.620Z",
+                    "modifiedAt": "2020-06-24T12:20:14.681Z"
+                  },
+                  "purchases": {
+                    "purchaseId": "d483cd1c-9b34-bfe6-27ff-61b5971a75db",
+                    "createdAt": "2020-06-10T04:43:59.479Z",
+                    "modifiedAt": "2020-06-10T04:43:59.479Z",
+                    "vehicleId": "14c47cd1-d84a-5aa7-bfde-0e2508a973ff",
+                    "buyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                    "originVehicleId": "548120267",
+                    "source": "AMS",
+                    "currency": "USD",
+                    "vehicleStatus": null,
+                    "totalAmountCents": "15050",
+                    "totalAmountDueCents": "15000",
+                    "purchaseDate": "1579154139000",
+                    "originTimestamp": "1579154139000",
+                    "amount": 150.5,
+                    "lineItems": [
+                      {
+                        "lineItemId": "437c45c7-3f29-d2b0-f551-3ee3d8bfa463",
+                        "purchaseId": "d483cd1c-9b34-bfe6-27ff-61b5971a75db",
+                        "createdAt": "2020-06-10T04:43:59.484Z",
+                        "modifiedAt": "2020-06-10T04:43:59.484Z",
+                        "paymentGroupId": "68c447c4-f003-384c-797e-179e654b176b",
+                        "paymentStatus": "unpaid",
+                        "amountCents": "230000",
+                        "lineItemType": "PURCHASE_PRICE",
+                        "parentLineItemId": "a9bc80c7-beba-fa44-6920-54822e966704",
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "ADESA Assurance",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 2300,
+                        "taxes": [
+                          {
+                            "lineItemId": "f88cfb60-fb43-b468-c7af-ecd224477781",
+                            "amount": 75,
+                            "paymentStatus": "unpaid"
+                          },
+                          {
+                            "lineItemId": "fdf44fab-e0d2-88ef-558e-92a3a3b296b3",
+                            "amount": 20.5,
+                            "paymentStatus": "unpaid"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "da6542c9-8a87-8b2c-6a85-e432cc4e5a4f",
+                        "purchaseId": "d483cd1c-9b34-bfe6-27ff-61b5971a75db",
+                        "createdAt": "2020-06-10T04:43:59.484Z",
+                        "modifiedAt": "2020-06-10T04:43:59.484Z",
+                        "paymentGroupId": "68c447c4-f003-384c-797e-179e654b176b",
+                        "paymentStatus": "unpaid",
+                        "amountCents": "7500",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": "cca35eaa-6a2b-57a2-7884-b9c24d7ea7fb",
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Unspecified",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 75,
+                        "taxes": []
+                      },
+                      {
+                        "lineItemId": "4fbea2a9-9681-dfad-66d6-d21991c0d16c",
+                        "purchaseId": "d483cd1c-9b34-bfe6-27ff-61b5971a75db",
+                        "createdAt": "2020-06-10T04:43:59.484Z",
+                        "modifiedAt": "2020-06-10T04:43:59.484Z",
+                        "paymentGroupId": "68c447c4-f003-384c-797e-179e654b176b",
+                        "paymentStatus": "unpaid",
+                        "amountCents": "7500",
+                        "lineItemType": "TRANSPORT",
+                        "parentLineItemId": "ba063561-4ee0-fd64-d262-f8e272b43091",
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Unspecified",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 75,
+                        "taxes": []
+                      }
+                    ]
+                  },
+                  "claim": {
+                    "status": "Closed",
+                    "submitDate": "01/19/70",
+                    "resolutionDate": "01/19/70",
+                    "originTimestamp": "01/19/70"
+                  },
+                  "psi": {
+                    "status": "Rejected",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "arbitration": {
+                    "status": "Closed",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "titleStatus": {
+                    "status": "Released",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXWQ589",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "01/19/70",
+                    "releasedDate": "01/19/70",
+                    "receivedDate": "01/19/70",
+                    "shippedDate": "01/19/70"
+                  }
+                },
+                {
+                  "eligibleUntilFormatted": "12/17/19",
+                  "assuranceExpired": true,
+                  "createdAt": "2020-05-20T11:58:41.642Z",
+                  "modifiedAt": "2020-06-16T08:25:13.725Z",
+                  "originVehicleId": "524439441",
+                  "arId": null,
+                  "nwVehicleId": "d5daecb8-a90d-51e5-9dc1-376c7ca2e910",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "435514",
+                  "purchaserFirstName": "IVAN JOHNNY",
+                  "purchaserLastName": "SVETINA",
+                  "purchaserLoginName": "svetina",
+                  "soldDate": "1574786700000",
+                  "year": 2013,
+                  "make": "TOYOTA",
+                  "model": "VENZA",
+                  "series": null,
+                  "trim": null,
+                  "vin": "4T3BA3BB8DU039099",
+                  "locationCity": "Enfield",
+                  "stateAbbreviation": "NS",
+                  "odometer": 143814,
+                  "odometerUnitOfMeasure": "km",
+                  "exteriorColor": "GREY",
+                  "interiorColor": "BLACK",
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "6b568c27-e240-4bec-af00-258ae7e23bdb",
+                  "auctionChannelValue": "Inlane",
+                  "assurancePaid": "1",
+                  "assuranceOriginTimestamp": "1590425653",
+                  "eligibleUntil": "1576601100000",
+                  "locationId": "071f16ad-6ef2-5c8e-89e8-812e178fe526",
+                  "vinTrimmed": "039099",
+                  "vehicleTitle": "2013 TOYOTA VENZA  ",
+                  "soldDateMMDDYY": "11/26/19",
+                  "adesaAssuranceDate ": "01/19/70",
+                  "location": {
+                    "nwLocationId": "071f16ad-6ef2-5c8e-89e8-812e178fe526",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-05T15:15:35.228Z",
+                    "modifiedAt": "2020-05-20T11:58:41.550Z"
+                  },
+                  "purchases": null,
+                  "claim": {
+                    "status": "Rejected",
+                    "submitDate": "01/19/70",
+                    "resolutionDate": "01/19/70",
+                    "originTimestamp": "01/19/70"
+                  },
+                  "psi": null,
+                  "arbitration": {
+                    "status": "Closed",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "titleStatus": {
+                    "status": "Open",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXW5555",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "06/01/20",
+                    "releasedDate": "06/11/20",
+                    "receivedDate": "06/01/20",
+                    "shippedDate": "06/01/20"
+                  }
+                },
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-06-10T08:04:15.310Z",
+                  "modifiedAt": "2020-06-10T08:04:15.310Z",
+                  "originVehicleId": "594748666",
+                  "arId": null,
+                  "nwVehicleId": "c571ebe5-e253-5e32-9e4d-0c1d607cf528",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "612786",
+                  "purchaserFirstName": "CARMEN LURDI",
+                  "purchaserLastName": "PALACIOS",
+                  "purchaserLoginName": "Carmenp20",
+                  "soldDate": "1591379160000",
+                  "year": 2009,
+                  "make": "FORD",
+                  "model": "F-150",
+                  "series": "BASE",
+                  "trim": null,
+                  "vin": "1FTPW14V19FA74241",
+                  "locationCity": "CLAYTON",
+                  "stateAbbreviation": "NC",
+                  "odometer": 204667,
+                  "odometerUnitOfMeasure": "Miles",
+                  "exteriorColor": "White",
+                  "interiorColor": "BEIGE",
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "eec1b413-b2af-43d0-ade7-856aa655da2c",
+                  "auctionChannelValue": "Simulcast",
+                  "assurancePaid": null,
+                  "assuranceOriginTimestamp": null,
+                  "eligibleUntil": null,
+                  "locationId": "60c630dd-d771-5238-90fe-498eec6e1773",
+                  "vinTrimmed": "A74241",
+                  "vehicleTitle": "2009 FORD F-150  BASE",
+                  "soldDateMMDDYY": "06/05/20",
+                  "adesaAssuranceDate ": null,
+                  "location": {
+                    "nwLocationId": "60c630dd-d771-5238-90fe-498eec6e1773",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-06-10T08:04:15.200Z",
+                    "modifiedAt": "2020-06-10T08:04:15.200Z"
+                  },
+                  "purchases": null,
+                  "claim": null,
+                  "psi": {
+                    "status": "Rejected",
+                    "statusDate": "06/01/20",
+                    "originTimeStamp": "06/01/20"
+                  },
+                  "arbitration": null,
+                  "titleStatus": null
+                },
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-05-12T09:11:37.787Z",
+                  "modifiedAt": "2020-05-12T09:11:37.787Z",
+                  "originVehicleId": "541082371",
+                  "arId": null,
+                  "nwVehicleId": "140f9058-af42-5acb-abe5-0c49585c1638",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "573392",
+                  "purchaserFirstName": "MARTIN ALFREDO",
+                  "purchaserLastName": "SANCHEZ",
+                  "purchaserLoginName": "CarsDAG",
+                  "soldDate": "1582583280000",
+                  "year": 2007,
+                  "make": "LINCOLN",
+                  "model": "NAVIGATOR",
+                  "series": null,
+                  "trim": null,
+                  "vin": "5LMFU27587LJ13238",
+                  "locationCity": "TAMPA",
+                  "stateAbbreviation": "FL",
+                  "odometer": 173118,
+                  "odometerUnitOfMeasure": "mi",
+                  "exteriorColor": "BLACK",
+                  "interiorColor": "BEIGE",
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "0f4106e4-cf90-4d5b-9508-e925a3c708f3",
+                  "auctionChannelValue": "Inlane",
+                  "assurancePaid": null,
+                  "assuranceOriginTimestamp": null,
+                  "eligibleUntil": null,
+                  "locationId": "fe17b4a2-8a60-5fed-b3f0-e6a01760d447",
+                  "vinTrimmed": "J13238",
+                  "vehicleTitle": "2007 LINCOLN NAVIGATOR  ",
+                  "soldDateMMDDYY": "02/24/20",
+                  "adesaAssuranceDate ": null,
+                  "location": {
+                    "nwLocationId": "fe17b4a2-8a60-5fed-b3f0-e6a01760d447",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-12T09:11:37.745Z",
+                    "modifiedAt": "2020-05-12T09:11:37.745Z"
+                  },
+                  "purchases": {
+                    "purchaseId": "2bc7959a-5b06-b2b1-70e1-d1d69c859313",
+                    "createdAt": "2020-05-12T10:22:27.276Z",
+                    "modifiedAt": "2020-05-12T10:22:27.276Z",
+                    "vehicleId": "140f9058-af42-5acb-abe5-0c49585c1638",
+                    "buyerOrganizationId": null,
+                    "originVehicleId": "548120267",
+                    "source": "AMS",
+                    "currency": "USD",
+                    "vehicleStatus": null,
+                    "totalAmountCents": "25000",
+                    "totalAmountDueCents": "25000",
+                    "purchaseDate": "1579154139000",
+                    "originTimestamp": "1579154139000",
+                    "amount": 250,
+                    "lineItems": [
+                      {
+                        "lineItemId": "24079692-6742-6781-f866-d8e2b0dcf7ac",
+                        "purchaseId": "2bc7959a-5b06-b2b1-70e1-d1d69c859313",
+                        "createdAt": "2020-05-12T10:22:27.343Z",
+                        "modifiedAt": "2020-05-12T10:22:27.343Z",
+                        "paymentGroupId": "5957fbd0-a45d-f326-880f-148d15945eab",
+                        "paymentStatus": "unpaid",
+                        "amountCents": "3500",
+                        "lineItemType": "PURCHASE_PRICE",
+                        "parentLineItemId": "5957fbd0-a45d-f326-880f-148d15945eab",
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Transport",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 35,
+                        "taxes": [
+                          {
+                            "lineItemId": "1fa26f98-531a-75cc-d083-9513945808ed",
+                            "amount": 12.5,
+                            "paymentStatus": "unpaid"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "claim": null,
+                  "psi": null,
+                  "arbitration": null,
+                  "titleStatus": {
+                    "status": "Released",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXWQ589",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "01/19/70",
+                    "releasedDate": "01/19/70",
+                    "receivedDate": "01/19/70",
+                    "shippedDate": "01/19/70"
+                  }
+                },
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-05-20T11:04:39.000Z",
+                  "modifiedAt": "2020-05-20T11:04:39.000Z",
+                  "originVehicleId": "530967874",
+                  "arId": null,
+                  "nwVehicleId": "92b75631-52c6-523f-9f7b-1ba7b7a83327",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": null,
+                  "purchaserFirstName": null,
+                  "purchaserLastName": null,
+                  "purchaserLoginName": null,
+                  "soldDate": "1577205840000",
+                  "year": 2009,
+                  "make": "FORD",
+                  "model": "SUPER DUTY F-350 SRW",
+                  "series": "2WD REG CAB 137 XL",
+                  "trim": null,
+                  "vin": "1FTSF30539EA40013",
+                  "locationCity": "ACTON",
+                  "stateAbbreviation": "MA",
+                  "odometer": 144959,
+                  "odometerUnitOfMeasure": "mi",
+                  "exteriorColor": "White",
+                  "interiorColor": "GREY",
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": null,
+                  "auctionChannelValue": "Inlane",
+                  "assurancePaid": null,
+                  "assuranceOriginTimestamp": null,
+                  "eligibleUntil": null,
+                  "locationId": "a4c7ebef-c740-52ed-b891-9f80cac1aec9",
+                  "vinTrimmed": "A40013",
+                  "vehicleTitle": "2009 FORD SUPER DUTY F-350 SRW  2WD REG CAB 137 XL",
+                  "soldDateMMDDYY": "12/24/19",
+                  "adesaAssuranceDate ": null,
+                  "location": {
+                    "nwLocationId": "a4c7ebef-c740-52ed-b891-9f80cac1aec9",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-20T11:04:38.805Z",
+                    "modifiedAt": "2020-06-02T22:16:22.798Z"
+                  },
+                  "purchases": {
+                    "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                    "createdAt": "2020-05-20T11:51:10.218Z",
+                    "modifiedAt": "2020-05-20T12:35:03.495Z",
+                    "vehicleId": "92b75631-52c6-523f-9f7b-1ba7b7a83327",
+                    "buyerOrganizationId": null,
+                    "originVehicleId": "530967874",
+                    "source": "AMS",
+                    "currency": "CAD",
+                    "vehicleStatus": "ACTIVE",
+                    "totalAmountCents": "2941950",
+                    "totalAmountDueCents": "60180",
+                    "purchaseDate": "1589454600",
+                    "originTimestamp": "1589454600",
+                    "amount": 29419.5,
+                    "lineItems": [
+                      {
+                        "lineItemId": "f09a590e-3931-4635-84a7-851b8db8e440",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "2500000",
+                        "lineItemType": "PURCHASE_PRICE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Vehicle",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 25000,
+                        "taxes": [
+                          {
+                            "lineItemId": "e4865027-6158-4eae-a555-30ecbb76c072",
+                            "amount": 3250,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "9bdc83bd-5b64-4ef5-aa0e-54303f91d0fe",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "18000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "ADESA Assurance",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 180,
+                        "taxes": [
+                          {
+                            "lineItemId": "6848ef73-f48a-4641-ac9d-905cf885a93c",
+                            "amount": 23.4,
+                            "paymentStatus": "NOT_PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "08d1dfe8-3b05-4e7b-aa2b-6e12a24151bb",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "25000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Buy Fee",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 250,
+                        "taxes": [
+                          {
+                            "lineItemId": "db06a4d2-8587-453b-8275-7d1c2e3c9d96",
+                            "amount": 32.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "9b495a17-1af1-4b59-a26a-5a32aa9656da",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "NOT_PAID",
+                        "amountCents": "18000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "PSI - 7 Day Full",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 180,
+                        "taxes": [
+                          {
+                            "lineItemId": "cd2bd777-1bf0-456b-a354-4027adbb47a6",
+                            "amount": 23.4,
+                            "paymentStatus": "NOT_PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "bee71605-9560-448d-9270-8260ed565ef7",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "5000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Title",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 50,
+                        "taxes": [
+                          {
+                            "lineItemId": "822705cf-96ff-4cc9-bc19-81d359f53d24",
+                            "amount": 6.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "072a90df-f174-4719-b358-f7528fff6042",
+                        "purchaseId": "40f771ab-d161-4cdc-90da-7783e0513b36",
+                        "createdAt": "2020-05-20T11:51:10.327Z",
+                        "modifiedAt": "2020-05-20T11:51:10.327Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "NOT_PAID",
+                        "amountCents": "37500",
+                        "lineItemType": "TRANSPORT",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Transport",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 375,
+                        "taxes": [
+                          {
+                            "lineItemId": "cd37db72-1820-4c19-8d2c-d40b6e33b90a",
+                            "amount": 48.7,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "claim": null,
+                  "psi": null,
+                  "arbitration": null,
+                  "titleStatus": {
+                    "status": "Open",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXW5555",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "01/19/70",
+                    "releasedDate": "01/19/70",
+                    "receivedDate": "01/19/70",
+                    "shippedDate": "01/19/70"
+                  }
+                },
+                {
+                  "eligibleUntilFormatted": null,
+                  "assuranceExpired": null,
+                  "createdAt": "2020-05-20T11:07:33.567Z",
+                  "modifiedAt": "2020-06-03T12:47:13.621Z",
+                  "originVehicleId": "530015611",
+                  "arId": null,
+                  "nwVehicleId": "1a99815b-6521-58b8-8926-deeae131f08f",
+                  "originBuyerOrganizationId": "28929",
+                  "nwBuyerOrganizationId": "9950edfd-7583-434d-af48-6c4b83d1181d",
+                  "buyerOrganizationName": "BILL BROWN FORD INC.",
+                  "originPurchaserLoginId": "546474",
+                  "purchaserFirstName": "MUSTAFA",
+                  "purchaserLastName": "BAKIR",
+                  "purchaserLoginName": "mustafabakir",
+                  "soldDate": "1576617480000",
+                  "year": 2008,
+                  "make": "BMW",
+                  "model": "5 SERIES",
+                  "series": "550I",
+                  "trim": null,
+                  "vin": "WBANW53578CT54274",
+                  "locationCity": "SANFORD",
+                  "stateAbbreviation": "FL",
+                  "odometer": 94277,
+                  "odometerUnitOfMeasure": "mi",
+                  "exteriorColor": "BLUE",
+                  "interiorColor": null,
+                  "lbRunNumber": null,
+                  "lbLaneNumber": null,
+                  "lbLotNumber": null,
+                  "nwPurchaserLoginId": "08647c51-a9e8-4e09-afba-abb402a636bf",
+                  "auctionChannelValue": "Simulcast",
+                  "assurancePaid": "0",
+                  "assuranceOriginTimestamp": "1590425653",
+                  "eligibleUntil": null,
+                  "locationId": "7b1ca631-facf-5e64-ace9-f3b2a20e6834",
+                  "vinTrimmed": "T54274",
+                  "vehicleTitle": "2008 BMW 5 SERIES  550I",
+                  "soldDateMMDDYY": "12/17/19",
+                  "adesaAssuranceDate ": "01/19/70",
+                  "location": {
+                    "nwLocationId": "7b1ca631-facf-5e64-ace9-f3b2a20e6834",
+                    "locationName": "Adesa United States",
+                    "address": "13085 Hamilton Crossing Blvd",
+                    "city": "Carmel",
+                    "state": "IN",
+                    "zip": "46032",
+                    "phoneNumber": "8009233725",
+                    "createdAt": "2020-05-20T11:07:33.504Z",
+                    "modifiedAt": "2020-05-20T11:07:33.504Z"
+                  },
+                  "purchases": {
+                    "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                    "createdAt": "2020-05-20T13:11:18.152Z",
+                    "modifiedAt": "2020-05-20T13:11:18.152Z",
+                    "vehicleId": "1a99815b-6521-58b8-8926-deeae131f08f",
+                    "buyerOrganizationId": null,
+                    "originVehicleId": "530967874",
+                    "source": "AMS",
+                    "currency": "CAD",
+                    "vehicleStatus": "ACTIVE",
+                    "totalAmountCents": "2941950",
+                    "totalAmountDueCents": "60180",
+                    "purchaseDate": "1589454600",
+                    "originTimestamp": "1589454600",
+                    "amount": 29419.5,
+                    "lineItems": [
+                      {
+                        "lineItemId": "5bd9c0b6-f482-4703-b363-7f1ec11bc684",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "2500000",
+                        "lineItemType": "PURCHASE_PRICE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Vehicle",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 25000,
+                        "taxes": [
+                          {
+                            "lineItemId": "b4a55654-fabc-42f7-a0b3-a99399f73eae",
+                            "amount": 3250,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "2766506c-b110-4243-aa1b-55666269db25",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "25000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1590454600",
+                        "lineItemDescription": "Buy Fee",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 250,
+                        "taxes": [
+                          {
+                            "lineItemId": "c628fd3c-8f37-4780-a8ed-eef997dbb19d",
+                            "amount": 32.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      },
+                      {
+                        "lineItemId": "3137a42d-4e76-4e7e-b43d-64445b0043d1",
+                        "purchaseId": "85a5ea48-0e79-4245-a7b4-b1fef307ac1f",
+                        "createdAt": "2020-05-20T13:11:18.206Z",
+                        "modifiedAt": "2020-05-20T13:11:18.206Z",
+                        "paymentGroupId": "2bf1ad83-38fb-4bae-b0aa-63207ee21c25",
+                        "paymentStatus": "PAID",
+                        "amountCents": "5000",
+                        "lineItemType": "FEE",
+                        "parentLineItemId": null,
+                        "paymentDueDate": "1579154139000",
+                        "lineItemDescription": "Title",
+                        "payOnline": true,
+                        "active": 1,
+                        "amount": 50,
+                        "taxes": [
+                          {
+                            "lineItemId": "2a89f7db-3ba5-4fab-a43c-a7614cd6d2ba",
+                            "amount": 6.5,
+                            "paymentStatus": "PAID"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "claim": {
+                    "status": "Closed",
+                    "submitDate": "01/19/70",
+                    "resolutionDate": "01/19/70",
+                    "originTimestamp": "01/19/70"
+                  },
+                  "psi": {
+                    "status": "Rejected",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "arbitration": {
+                    "status": "Closed",
+                    "statusDate": "01/19/70",
+                    "originTimeStamp": "01/19/70"
+                  },
+                  "titleStatus": {
+                    "status": "Released",
+                    "releaseMethod": "Online",
+                    "shippingTrackingNumber": "AXWQ589",
+                    "shippingCarrier": "DTS",
+                    "statusDate": "01/19/70",
+                    "releasedDate": "01/19/70",
+                    "receivedDate": "01/19/70",
+                    "shippedDate": "01/19/70"
+                  }
+                }
+            ]
+        }
+    },
+    "getVehicleETR": {
+      "data": [
+        {
+          "sourcePurchaseId": "195ebf11-5ccd-5961-b5ed-e12c8c099340",
+          "buyer": {
+            "name": "TRACY HONDA",
+            "auctionAccessId": "5084166"
+          },
+          "purchaseDate": "2020-03-14T23:38:43",
+          "sourceMessageSequence": 1594769938715,
+          "currency": "CAD",
+          "assurance": {
+            "price": 12000,
+            "terms": "mockTerms",
+            "expirationDate": "2020-07-29T15:50:23.091",
+            "reasons": [
+              "mockReason1",
+              "mockReason2"
+            ],
+            "isSubscribed": false,
+            "isEligible": true,
+            "status": {
+              "name": "SUBMITTED",
+              "date": "2020-06-29T15:50:23.091"
+            }
+          },
+          "title": {
+            "releaseMethod": "COURIER",
+            "status": {
+              "name": "Customer Support",
+              "date": "2020-07-14T23:38:46"
+            },
+            "shippingInfo": {
+              "options": null,
+              "isAvailable": true,
+              "trackingNumber": "mockTrackingNumber",
+              "courierName": "mockCourierName",
+              "dateShipped": "1970-01-29T15:50:23.091"
+            }
+          },
+          "postSaleInspection": {
+            "status": {
+              "name": "Not Ordered",
+              "date": "2020-06-29T15:50:23.091"
+            },
+            "options": [
+              {
+                "price": 1200,
+                "description": "PSI Description"
+              }
+            ],
+            "expirationDate": "2020-07-29T15:50:23.091"
+          },
+          "arbitration": {
+            "status": {
+              "name": "ACTIVE",
+              "date": "1970-01-29T15:50:23.091"
+            }
+          },
+          "preDeliveryInspection": {
+            "status": {
+              "name": "mockPDIStatus",
+              "date": "1970-01-29T15:50:23.091"
+            },
+            "options": null
+          },
+          "totalAmount": 700000,
+          "totalAmountDue": 700000,
+          "purchasePaymentStatus": "DUE",
+          "metadata": {
+            "$type": "VehiclePurchaseMetadata",
+            "vin": "1C4PJMLN1KD116149",
+            "model": "CHEROKEE",
+            "make": "JEEP",
+            "year": 2019,
+            "odometer": {
+              "unitOfMeasure": "KM",
+              "value": 27589
+            },
+            "exteriorColor": "GRANITE",
+            "interiorColor": "BLACK",
+            "imageUrl": null,
+            "detailedInfoUrl": "/mfe/vdp?vehicleId=09A16920-98C4-4F8B-98DE-CE2393205A77",
+            "trim": "LATITUDE PLUS",
+            "series": "4dr Latitude Plus 2.0T\r"
+          },
+          "purchaseInfo": {
+            "metadata": {
+              "$type": "OnlinePurchaseInfoMetadata",
+              "location": {
+                "name": "ADESA Austin",
+                "addressLine": "2108 Furguson Lane",
+                "city": "Austin",
+                "country": "US",
+                "stateProvince": "TX",
+                "postalCode": "78754",
+                "phone": "512.872.4000",
+                "addressLine2": "Some Other Address"
+              },
+              "laneNumber":  "#34232",
+              "runNumber":  "#21212",
+              "salesChannel": "INLANE",
+              "companyId": "6235613517235127"
+            }
+          },
+          "lineItemGroups": [
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "FeeLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 100,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockFeeLineItemSourceId",
+                  "amount": null
+                }
+              ]
+            },
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "PurchasePriceLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 3000,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockPurchasePriceLineItemSourceId",
+                  "amount": 3000000
+                },
+                {
+                  "$type": "TaxLineItem",
+                  "description": "mockDescription",
+                  "sourceId": "mockTaxLineItemSourceId",
+                  "amount": 20000
+                }
+              ]
+            }
+          ],
+          "region": "US",
+          "purchaser": {
+            "name": "Peter Mack",
+            "auctionAccessId": "5455456454"
+          },
+          "transport": null,
+          "photos": null,
+          "documents": null
+        },
+        {
+          "sourcePurchaseId": "195ebf11-5ccd-5961-b5ed-e12c8c099330",
+          "buyer": {
+            "name": "TRACY HONDA",
+            "auctionAccessId": "5084166"
+          },
+          "purchaseDate": "2020-07-12T23:38:43",
+          "sourceMessageSequence": 1594769938715,
+          "currency": "CAD",
+          "assurance": {
+            "price": 12000,
+            "terms": "mockTerms",
+            "expirationDate": "2020-07-29T15:50:23.091",
+            "reasons": [
+              "mockReason1",
+              "mockReason2"
+            ],
+            "isSubscribed": false,
+            "isEligible": true,
+            "status": {
+              "name": "NOT_SUBMITTED",
+              "date": "2020-06-29T15:50:23.091"
+            }
+          },
+          "title": {
+            "releaseMethod": "COURIER",
+            "status": {
+              "name": "Received",
+              "date": "2020-07-14T23:38:46"
+            },
+            "shippingInfo": {
+              "options": null,
+              "isAvailable": true,
+              "trackingNumber": "mockTrackingNumber",
+              "courierName": "mockCourierName",
+              "dateShipped": "1970-01-29T15:50:23.091"
+            }
+          },
+          "postSaleInspection": {
+            "status": {
+              "name": "In Process",
+              "date": "2020-06-29T15:50:23.091"
+            },
+            "options": [
+              {
+                "price": 1200,
+                "description": "PSI Description"
+              }
+            ],
+            "expirationDate": "2020-07-29T15:50:23.091"
+          },
+          "arbitration": {
+            "status": {
+              "name": "CLOSED",
+              "date": "1970-01-29T15:50:23.091"
+            }
+          },
+          "preDeliveryInspection": {
+            "status": {
+              "name": "mockPDIStatus",
+              "date": "1970-01-29T15:50:23.091"
+            },
+            "options": null
+          },
+          "totalAmount": 800000,
+          "totalAmountDue": 800000,
+          "purchasePaymentStatus": "DUE",
+          "metadata": {
+            "$type": "VehiclePurchaseMetadata",
+            "vin": "1C4PJMLN1KD76543",
+            "model": "CHEROKEE",
+            "make": "JEEP",
+            "year": 2019,
+            "odometer": {
+              "unitOfMeasure": "KM",
+              "value": 27589
+            },
+            "exteriorColor": "GRANITE",
+            "interiorColor": "BLACK",
+            "imageUrl": null,
+            "detailedInfoUrl": "/mfe/vdp?vehicleId=09A16920-98C4-4F8B-98DE-CE2393205A77",
+            "trim": "LATITUDE PLUS",
+            "series": "4dr Latitude Plus 2.0T\r"
+          },
+          "purchaseInfo": {
+            "metadata": {
+              "$type": "OnlinePurchaseInfoMetadata",
+              "location": {
+                "name": "ADESA Austin",
+                "addressLine": "2108 Furguson Lane",
+                "city": "Austin",
+                "country": "US",
+                "stateProvince": "TX",
+                "postalCode": "78754",
+                "phone": "512.872.4000",
+                "addressLine2": "Some Other Address"
+              },
+              "laneNumber":  "#34232",
+              "runNumber":  "#21212",
+              "salesChannel": "INLANE",
+              "companyId": "6235613517235127"
+            }
+          },
+          "lineItemGroups": [
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "FeeLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 100,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockFeeLineItemSourceId",
+                  "amount": null
+                }
+              ]
+            },
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "PurchasePriceLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 3000,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockPurchasePriceLineItemSourceId",
+                  "amount": 3000000
+                },
+                {
+                  "$type": "TaxLineItem",
+                  "description": "mockDescription",
+                  "sourceId": "mockTaxLineItemSourceId",
+                  "amount": 20000
+                }
+              ]
+            }
+          ],
+          "region": "US",
+          "purchaser": {
+            "name": "Peter Mack",
+            "auctionAccessId": "5455456454"
+          },
+          "transport": null,
+          "photos": null,
+          "documents": null
+        },
+        {
+          "sourcePurchaseId": "195ebf14-5ccd-5961-b5ed-e12c8c099340",
+          "buyer": {
+            "name": "TRACY HONDA",
+            "auctionAccessId": "5084166"
+          },
+          "purchaseDate": "2020-06-14T23:38:43",
+          "sourceMessageSequence": 1594769938715,
+          "currency": "CAD",
+          "assurance": {
+            "price": 12000,
+            "terms": "mockTerms",
+            "expirationDate": "2020-07-29T15:50:23.091",
+            "reasons": [
+              "mockReason1",
+              "mockReason2"
+            ],
+            "isSubscribed": false,
+            "isEligible": true,
+            "status": {
+              "name": "CLOSED",
+              "date": "2020-06-29T15:50:23.091"
+            }
+          },
+          "title": {
+            "releaseMethod": "COURIER",
+            "status": {
+              "name": "Released",
+              "date": "2020-05-14T23:38:46"
+            },
+            "shippingInfo": {
+              "options": null,
+              "isAvailable": true,
+              "trackingNumber": "mockTrackingNumber",
+              "courierName": "mockCourierName",
+              "dateShipped": "1970-01-29T15:50:23.091"
+            }
+          },
+          "postSaleInspection": {
+            "status": {
+              "name": "Passed",
+              "date": "2020-06-29T15:50:23.091"
+            },
+            "options": [
+              {
+                "price": 1200,
+                "description": "PSI Description"
+              }
+            ],
+            "expirationDate": "2020-07-29T15:50:23.091"
+          },
+          "arbitration": {
+            "status": {
+              "name": "ACTIVE",
+              "date": "1970-01-29T15:50:23.091"
+            }
+          },
+          "preDeliveryInspection": {
+            "status": {
+              "name": "mockPDIStatus",
+              "date": "1970-01-29T15:50:23.091"
+            },
+            "options": null
+          },
+          "totalAmount": 900000,
+          "totalAmountDue": 900000,
+          "purchasePaymentStatus": "DUE",
+          "metadata": {
+            "$type": "VehiclePurchaseMetadata",
+            "vin": "1C4PJMLN1KD116324",
+            "model": "CHEROKEE",
+            "make": "JEEP",
+            "year": 2019,
+            "odometer": {
+              "unitOfMeasure": "KM",
+              "value": 27589
+            },
+            "exteriorColor": "GRANITE",
+            "interiorColor": "BLACK",
+            "imageUrl": null,
+            "detailedInfoUrl": "/mfe/vdp?vehicleId=09A16920-98C4-4F8B-98DE-CE2393205A77",
+            "trim": "LATITUDE PLUS",
+            "series": "4dr Latitude Plus 2.0T\r"
+          },
+          "purchaseInfo": {
+            "metadata": {
+              "$type": "OnlinePurchaseInfoMetadata",
+              "location": {
+                "name": "ADESA Austin",
+                "addressLine": "2108 Furguson Lane",
+                "city": "Austin",
+                "country": "US",
+                "stateProvince": "TX",
+                "postalCode": "78754",
+                "phone": "512.872.4000",
+                "addressLine2": "Some Other Address"
+              },
+              "laneNumber":  "#34232",
+              "runNumber":  "#21212",
+              "salesChannel": "INLANE",
+              "companyId": "6235613517235127"
+            }
+          },
+          "lineItemGroups": [
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "FeeLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 100,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockFeeLineItemSourceId",
+                  "amount": null
+                }
+              ]
+            },
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "PurchasePriceLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 3000,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockPurchasePriceLineItemSourceId",
+                  "amount": 3000000
+                },
+                {
+                  "$type": "TaxLineItem",
+                  "description": "mockDescription",
+                  "sourceId": "mockTaxLineItemSourceId",
+                  "amount": 20000
+                }
+              ]
+            }
+          ],
+          "region": "US",
+          "purchaser": {
+            "name": "Peter Mack",
+            "auctionAccessId": "5455456454"
+          },
+          "transport": null,
+          "photos": null,
+          "documents": null
+        },
+        {
+          "sourcePurchaseId": "165ebf11-5ccd-5961-b5ed-e12c8c099340",
+          "buyer": {
+            "name": "TRACY HONDA",
+            "auctionAccessId": "5084166"
+          },
+          "purchaseDate": "2020-07-01T23:38:43",
+          "sourceMessageSequence": 1594769938715,
+          "currency": "CAD",
+          "assurance": {
+            "price": 12000,
+            "terms": "mockTerms",
+            "expirationDate": "2020-07-29T15:50:23.091",
+            "reasons": [
+              "mockReason1",
+              "mockReason2"
+            ],
+            "isSubscribed": false,
+            "isEligible": true,
+            "status": {
+              "name": "REJECTED",
+              "date": "2020-06-29T15:50:23.091"
+            }
+          },
+          "title": {
+            "releaseMethod": "COURIER",
+            "status": {
+              "name": "Shipped",
+              "date": "2020-04-14T23:38:46"
+            },
+            "shippingInfo": {
+              "options": null,
+              "isAvailable": true,
+              "trackingNumber": "mockTrackingNumber",
+              "courierName": "mockCourierName",
+              "dateShipped": "1970-01-29T15:50:23.091"
+            }
+          },
+          "postSaleInspection": {
+            "status": {
+              "name": "Failed",
+              "date": "2020-06-29T15:50:23.091"
+            },
+            "options": [
+              {
+                "price": 1200,
+                "description": "PSI Description"
+              }
+            ],
+            "expirationDate": "2020-07-29T15:50:23.091"
+          },
+          "arbitration": {
+            "status": {
+              "name": "CLOSED",
+              "date": "1970-01-29T15:50:23.091"
+            }
+          },
+          "preDeliveryInspection": {
+            "status": {
+              "name": "mockPDIStatus",
+              "date": "1970-01-29T15:50:23.091"
+            },
+            "options": null
+          },
+          "totalAmount": 860000,
+          "totalAmountDue": 860000,
+          "purchasePaymentStatus": "DUE",
+          "metadata": {
+            "$type": "VehiclePurchaseMetadata",
+            "vin": "1C4PJMLN1KD215449",
+            "model": "CHEROKEE",
+            "make": "JEEP",
+            "year": 2019,
+            "odometer": {
+              "unitOfMeasure": "KM",
+              "value": 27589
+            },
+            "exteriorColor": "GRANITE",
+            "interiorColor": "BLACK",
+            "imageUrl": null,
+            "detailedInfoUrl": "/mfe/vdp?vehicleId=09A16920-98C4-4F8B-98DE-CE2393205A77",
+            "trim": "LATITUDE PLUS",
+            "series": "4dr Latitude Plus 2.0T\r"
+          },
+          "purchaseInfo": {
+            "metadata": {
+              "$type": "OnlinePurchaseInfoMetadata",
+              "location": {
+                "name": "ADESA Austin",
+                "addressLine": "2108 Furguson Lane",
+                "city": "Austin",
+                "country": "US",
+                "stateProvince": "TX",
+                "postalCode": "78754",
+                "phone": "512.872.4000",
+                "addressLine2": "Some Other Address"
+              },
+              "laneNumber":  "#34232",
+              "runNumber":  "#21212",
+              "salesChannel": "INLANE",
+              "companyId": "6235613517235127"
+            }
+          },
+          "lineItemGroups": [
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "FeeLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 100,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockFeeLineItemSourceId",
+                  "amount": null
+                }
+              ]
+            },
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "PurchasePriceLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 3000,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockPurchasePriceLineItemSourceId",
+                  "amount": 3000000
+                },
+                {
+                  "$type": "TaxLineItem",
+                  "description": "mockDescription",
+                  "sourceId": "mockTaxLineItemSourceId",
+                  "amount": 20000
+                }
+              ]
+            }
+          ],
+          "region": "US",
+          "purchaser": {
+            "name": "Peter Mack",
+            "auctionAccessId": "5455456454"
+          },
+          "transport": null,
+          "photos": null,
+          "documents": null
+        },
+        {
+          "sourcePurchaseId": "195ebf11-5ccf-5961-b5ed-e12c8c099340",
+          "buyer": {
+            "name": "TRACY HONDA",
+            "auctionAccessId": "5084166"
+          },
+          "purchaseDate": "2020-07-21T23:38:43",
+          "sourceMessageSequence": 1594769938715,
+          "currency": "CAD",
+          "assurance": {
+            "price": 12000,
+            "terms": "mockTerms",
+            "expirationDate": "2020-07-29T15:50:23.091",
+            "reasons": [
+              "mockReason1",
+              "mockReason2"
+            ],
+            "isSubscribed": false,
+            "isEligible": true,
+            "status": {
+              "name": "REJECTED",
+              "date": "2020-06-29T15:50:23.091"
+            }
+          },
+          "title": {
+            "releaseMethod": "COURIER",
+            "status": {
+              "name": "Shipped",
+              "date": "2020-01-14T23:38:46"
+            },
+            "shippingInfo": {
+              "options": null,
+              "isAvailable": true,
+              "trackingNumber": "mockTrackingNumber",
+              "courierName": "mockCourierName",
+              "dateShipped": "1970-01-29T15:50:23.091"
+            }
+          },
+          "postSaleInspection": {
+            "status": {
+              "name": "Cancelled",
+              "date": "2020-06-29T15:50:23.091"
+            },
+            "options": [
+              {
+                "price": 1200,
+                "description": "PSI Description"
+              }
+            ],
+            "expirationDate": "2020-07-29T15:50:23.091"
+          },
+          "arbitration": {
+            "status": {
+              "name": "CLOSED",
+              "date": "1970-01-29T15:50:23.091"
+            }
+          },
+          "preDeliveryInspection": {
+            "status": {
+              "name": "mockPDIStatus",
+              "date": "1970-01-29T15:50:23.091"
+            },
+            "options": null
+          },
+          "totalAmount": 860000,
+          "totalAmountDue": 860000,
+          "purchasePaymentStatus": "DUE",
+          "metadata": {
+            "$type": "VehiclePurchaseMetadata",
+            "vin": "1C4PJMLN1KD116149",
+            "model": "CHEROKEE",
+            "make": "JEEP",
+            "year": 2019,
+            "odometer": {
+              "unitOfMeasure": "KM",
+              "value": 27589
+            },
+            "exteriorColor": "GRANITE",
+            "interiorColor": "BLACK",
+            "imageUrl": null,
+            "detailedInfoUrl": "/mfe/vdp?vehicleId=09A16920-98C4-4F8B-98DE-CE2393205A77",
+            "trim": "LATITUDE PLUS",
+            "series": "4dr Latitude Plus 2.0T\r"
+          },
+          "purchaseInfo": {
+            "metadata": {
+              "$type": "OnlinePurchaseInfoMetadata",
+              "location": {
+                "name": "ADESA Austin",
+                "addressLine": "2108 Furguson Lane",
+                "city": "Austin",
+                "country": "US",
+                "stateProvince": "TX",
+                "postalCode": "78754",
+                "phone": "512.872.4000",
+                "addressLine2": "Some Other Address"
+              },
+              "laneNumber":  "#34232",
+              "runNumber":  "#21212",
+              "salesChannel": "INLANE",
+              "companyId": "6235613517235127"
+            }
+          },
+          "lineItemGroups": [
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "FeeLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 100,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockFeeLineItemSourceId",
+                  "amount": null
+                }
+              ]
+            },
+            {
+              "paymentDueDate": "1970-01-29T15:50:23.091",
+              "paymentStatus": "DUE",
+              "isPayableOnline": true,
+              "lineItems": [
+                {
+                  "$type": "PurchasePriceLineItem",
+                  "description": "mockDescription",
+                  "taxes": [
+                    {
+                      "amount": 3000,
+                      "name": "mockTaxName"
+                    }
+                  ],
+                  "sourceId": "mockPurchasePriceLineItemSourceId",
+                  "amount": 3000000
+                },
+                {
+                  "$type": "TaxLineItem",
+                  "description": "mockDescription",
+                  "sourceId": "mockTaxLineItemSourceId",
+                  "amount": 20000
+                }
+              ]
+            }
+          ],
+          "region": "US",
+          "purchaser": {
+            "name": "Peter Mack",
+            "auctionAccessId": "5455456454"
+          },
+          "transport": null,
+          "photos": null,
+          "documents": null
+        }
+      ]
+    },  
+    "getVehiclesCount": {
+        "message": "success",
+        "content": {
+            "count": 1
+        }
+    },
+    "getUpdatedVehicles": {
+        "message": "success",
+        "content": {
+            "count": 0
+        }
+    }
+}

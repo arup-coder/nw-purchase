@@ -1,0 +1,39 @@
+<!-- Left panel -->
+
+<div class="reset-trigger bold col-12 row px-0 mb-2">
+	<span class="col-12 col-md-12 px-0">
+		Filter By: <a class="ml-2 reset-title float-right purchases-btn-reset-filters" id="resetAll" (click)="resetFilters()">
+			<img [src]="resetFiltersImg" class="purchases-btn-reset-filters"/><span class="purchases-btn-reset-filters" id="reset-all-text">Reset All</span></a>
+	</span>
+</div>
+<nw-accordion multiple="true" [expandIcon]="expandIcon">
+  <nw-accordionTab [header]="row.heading" styleClass="{{'purchases-btn-' + row.name}}" *ngFor="let row of config" id="{{'filter_' + createId(row.id)}}" [expanded]="row.isExpandedByDefault" [selected]="selectedFilters[row.id].length > 0">
+		<div *ngIf="row.type === 'checkbox'" class="purchases-btn-{{row.name}}">
+			<div *ngFor="let option of row['options']" class="py-1" id="{{'filter_' + createId(row.id) + '_' + createId(option.title)}}" [class.is-disabled]="option.count == 0">
+				<nw-checkbox name="{{row.id}}" styleClass="{{'purchases-btn-' + row.name}}" labelStyleClass="{{'purchases-btn-' + row.name}}" [disabled]="option.count == 0" [(ngModel)]="selectedFilters[row.id]" [value]="option.title" (onChange)="filterSelectionChanged(row, option.title)" label="{{getLabel(option.title, option.count)}}" inputId="{{row.id}}"></nw-checkbox>
+			</div>
+	</div>
+		<div *ngIf="row.type === 'input'" class="input-wrapper purchases-btn-{{row.name}}" id="{{'filter_' + createId(row.id) + '_input'}}">
+			<input [(ngModel)]="selectedFilters[row.id]" type="text" [placeholder]="row.placeholder" (blur)="filterSelectionChanged(row)" (keyup.enter)="filterSelectionChanged(row)" maxlength="{{row?.validation?.maxLength}}"
+				class="purchases-btn-{{row.name}}"/>
+			<div *ngIf="errors[row.id]">
+				<p class="error">{{row?.validation?.error}}</p>
+			</div>
+		</div>
+		<div *ngIf="row.type === 'date'" [ngClass]="{'hideCalender' : hideCalenderSelected}">
+				<ngx-daterangepicker-material
+					#pickerDirective
+					[showCustomRangeLabel]="true"
+					[ranges]="ranges"
+					[linkedCalendars]="true"
+					[customRangeDirection]="true"
+					[closeOnAutoApply]="true"
+					[showDropdowns]="true"
+					[minDate]="dateRangeMinDate"
+					[maxDate]="dateRangeMaxDate"
+					(datesUpdated)="chosenDateTime(row, $event)"
+					(rangeClicked)="resetCalenderFlag($event)"
+				></ngx-daterangepicker-material>
+		</div>
+	</nw-accordionTab>
+</nw-accordion>

@@ -1,0 +1,60 @@
+@import "./../../../../../../assets/scss/variables";
+
+.details-wrapper {
+	margin: 0.9em 0 0 0;
+}
+.details-wrapper .inner-wrapper {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.details-wrapper h6 {
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 6px;
+}
+.details-wrapper p {
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 6px;
+}
+.details-wrapper .details-span {
+	margin-left: 0.5em;
+	margin-top: 1px;
+	color: #000000;
+}
+.run-lane-seperator {
+	color: #00838f;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.auction-block {
+	font-size: 12px;
+	margin-left: 8px;
+	padding: 1px 10px;
+}
+
+.auction-block-db {
+	background-color: #000000;
+	color: $white;
+}
+
+.auction-block-il {
+	background-color: #da7a1b;
+	color: $white;
+}
+
+.auction-block-sc {
+	background-color: #00838f;
+	color: $white;
+}
+
+.address {
+	line-height: 18px !important;
+	margin-bottom: 0 !important;
+}
+
+:host ::ng-deep .hidden-location {
+	white-space: pre-line;
+	color: #69696e;
+}

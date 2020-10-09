@@ -1,0 +1,36 @@
+<div class="card-list vehicle-list-wrapper">
+	<nw-card *ngFor="let row of vehicleList" id="{{ row[idUniqueField] + '_card-view' }}">
+		<div class="row row-card-title px-0" id="{{ row[idUniqueField] + '_vehicle_title_row' }}">
+			<div class="col px-0">
+				<span class="card_vehicle_heading" id="{{ row[idUniqueField] + '_card-vehicle-heading' }}">
+						{{ row.vehicleTitle | titlecase }}
+				</span>
+			</div>
+		</div>	
+		<div class="row row-card-vin row-card-payment-status px-0" id="{{ row[idUniqueField] + '_vin_n_payment_status_row' }}">
+			<div class="col-8 px-0">
+				<p class="card_vin mb-0 font-weight-bold" id="{{ row[idUniqueField] + '_card-vin' }}">{{ row.vin }}</p>
+			</div>
+			<div class="col-4 px-0">
+				<nw-purchases-payment-status [data]="row"></nw-purchases-payment-status>
+			</div>
+		</div>	
+		<div class="row row-card-title-status px-0" id="{{ row[idUniqueField] + '_title_status_row' }}">
+			<div class="col px-0" *ngIf="row.titleStatus && row.titleStatus.status"> 
+				<p class="card_vin mb-0">
+					<span class="font-weight-bold card-title-status-label" id="{{ row[idUniqueField] + '_card-title-status-label' }}"> 
+						Title Status: 
+					</span> 
+					<span  class="card-title-status" id="{{ row[idUniqueField] + '_card-title-status' }}"> 
+						{{ titleStatusUi[row?.titleStatus?.status] }} 
+					</span>
+					<span 
+					*ngIf="titleStatus.NOT_HANDLED !== row?.titleStatus?.status && titleStatus.NOT_RECEIVED !== row?.titleStatus?.status"
+					class="card-title-status-date" id="{{ row[idUniqueField] + '_card-title-status-date' }}"> 
+						{{row?.titleStatus?.statusDate}} 
+					</span>
+				</p>
+			</div>
+		</div>	
+	</nw-card>
+</div>

@@ -1,0 +1,15 @@
+<div
+	class="col details-wrapper overflow-hidden px-0"
+>
+		<div class="col d-sm-flex px-0">
+			<span> <img src="{{ arbitrationImg }}" [attr.alt]="vehicleAltLabels.arbitrationImg" id="{{ data[idUniqueField] + '_arbitration_img' }}" /> </span>
+			<div class="col pr-2 pl-0 ml-2 arbitration-wrapper">
+				<div class=" col px-0 row">
+					<div class="col pr-2 pl-0">
+            		<p class="mb-1 font-wt-500" id="{{ data[idUniqueField] + '_arbitration_header' }}"> {{ headTitle.arbitrationStatus}}</p>
+					<p id="{{ data[idUniqueField] + '_arbitration_status' }}" class="color-slight-black">{{localArbitrationStatusUI[data?.arbitration?.status]}}<span *ngIf="data?.arbitration?.status != localArbitrationStatus.NOT_ARBITRATED"> &nbsp;{{data?.arbitration?.statusDate}}</span></p>
+					</div>
+				 </div>
+			</div> 
+    </div>
+</div>

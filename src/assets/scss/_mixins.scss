@@ -1,0 +1,29 @@
+@import './variables';
+
+@mixin text-style($fontVal: 14px, $lineHgtVal: 18px) {
+    font-size: $fontVal;
+    line-height: $lineHgtVal;
+}
+
+@mixin border-rounded($radius: 4px, $borderWidth: 1px, $borderStyle: solid, $borderColor: #ffffff) {
+    border-radius: $radius;
+    border: $borderWidth $borderStyle $borderColor;
+}
+
+@mixin box-shadows($shadows...) {
+    box-shadow: $shadows;
+}
+
+@mixin border-left-transition($br-color: $white, $duration: 0.5s) {
+    border-left: 6px solid $br-color;
+    transition: border-left $duration linear;
+}
+
+@mixin button-style($bgColor: #ffffff, $color: #000000) {
+    background-color: $bgColor;
+    color: $color;
+}
+
+@mixin f-wt($fontWtVal) {
+    font-weight: $fontWtVal;
+}

@@ -1,0 +1,49 @@
+@import './../../../../../../assets/scss/mixins';
+
+.purchases-btn-file-claim {
+  padding: 10px 30px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  cursor: pointer;
+  width: 13em;
+  text-align: center;
+}
+
+.assurance-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.assurance-icon-enabled {
+  @include button-style($bgColor: #652D89, $color: #ffffff);
+}
+
+.assurance-icon-disabled {
+  @include button-style($bgColor: rgba(101, 45, 137, 0.34), $color: #ffffff);
+}
+
+.eligible-text {
+  color: #696969;
+  font-size: 12px;
+}
+
+.eligibility-expired {
+  color: #D0130F;
+}
+
+.purchases-btn-disabled {
+  color: #B1CBDA;
+  @include border-rounded($radius: 4px, $borderWidth: 1px, $borderColor: #B1CBDA);
+}
+
+.purchases-btn-enabled {
+  color: #027ABB;
+  @include border-rounded($radius: 4px, $borderWidth: 1px, $borderColor: #027ABB);
+}

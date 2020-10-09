@@ -1,0 +1,43 @@
+
+.page-container {
+    padding-top: 30px;
+
+}
+
+.page-gvapi-wrapper {
+    padding-left:60px;
+    padding-right:5px;
+    font-family: Heebo;
+    font-style: normal;
+    text-align: right;
+    width: 100%;
+    line-height: 1;
+    border: 1px solid #D9DCE1;
+    height: 34px;
+    background-color: white;
+    background: url(/apps/purchases/assets/icon/arrow/selector_arrow.svg) no-repeat left;
+    -webkit-appearance: none;
+    background-position-x: 8px;  
+    box-sizing: border-box;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 14px;
+    color: #58595B;
+}
+
+.purchases-btn-page-selector{
+    color: inherit;
+}
+
+.select-no-focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.select-no-radius{
+    border-radius: 0 !important;
+    color: #58595B;
+}
+.purchases-btn-pagination-option {
+    color: inherit;
+}

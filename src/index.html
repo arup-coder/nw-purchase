@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Purchases</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" id="favIcon"
+        href="/static-components/ui-foundation/latest/assets/img/themes/1/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800|Fira+Sans:600&amp;text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?.1234567890[]';.()/\!@#$%^&amp;*-=+_{}:|\.ABCDEFGHIJKLMNOPQRSTUVWXYZ*~\"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link href="/static-components/ui-foundation/latest/auifoundation.css" rel="stylesheet" />
+    <link href="/mfe/style.css" rel="stylesheet">
+
+    <style>
+        * body,
+        * html {
+            background: white;
+        }
+
+        * body main section,
+        * html main section {
+            margin: 0px auto;
+            display: block;
+        }
+
+        * body loader,
+        * html loader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            background: none;
+            z-index: 10;
+            text-align: center;
+        }
+
+        watermark {
+            position: fixed;
+            right: 5px;
+            right: 5px;
+            opacity: 0.15;
+            z-index: 99;
+            color: rgba(25, 25, 25, 0.85);
+            text-shadow: 0px 1px 1px #4d4d4d;
+            display: none;
+        }
+
+        .sprite {
+            background-image: url('/static-components/ui-foundation/latest/assets/img/sprite_icons.png');
+            background-repeat: no-repeat;
+            display: inline-block !important;
+        }
+
+        .sprite-CAN_sm {
+            width: 28px;
+            height: 17px;
+            background-position: -5px -5px;
+        }
+
+        .sprite-US_sm {
+            width: 28px;
+            height: 17px;
+            background-position: -63px -5px;
+        }
+
+        .sprite-pb-openlane {
+            width: 147px;
+            height: 15px;
+            background-position: -322px -172px;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5PFFR28');
+
+
+    </script>
+   
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PFFR28" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <main>
+        <nw-root></nw-root>
+    </main>
+</body>
+
+</html>

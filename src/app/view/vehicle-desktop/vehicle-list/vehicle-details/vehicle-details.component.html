@@ -1,0 +1,27 @@
+<div class="col-lg-10 offset-lg-1" *ngIf="data != null">
+	<nw-basic-details [data]="data" [idUniqueField]="idUniqueField"></nw-basic-details>
+	<div *ngIf="data != null && data?.purchases != null && data?.purchases?.lineItems != null">
+		<div class="mt-4 mb-3 overflow-auto seperator-div"></div>
+		<nw-finance-details [data]="data" [idUniqueField]="idUniqueField"></nw-finance-details>
+	</div>
+
+	<div class="mt-4 mb-3 overflow-auto seperator-div"></div>
+	<div class="col-sm-12 row px-0">
+		<nw-title-tracking class="col-sm-4 px-0" [data]="data"
+			[idUniqueField]="idUniqueField"></nw-title-tracking>
+		<nw-purchases-psi-status class="col-sm-4 px-0" *ngIf="data?.psi && data?.psi?.status" [data]="data"
+			[idUniqueField]="idUniqueField"></nw-purchases-psi-status>
+	</div>
+
+	<!-- Check with *ngIf="data?.assurancePaid == '1'" once we need conditional file a claim button -->
+	<div *ngIf="data?.adesaAssuranceStatus || data?.arbitration?.status">
+		<div class="mt-4 mb-3 overflow-auto seperator-div"></div>
+		<div class="col-sm-8 row px-0">
+			<nw-file-claim class="col px-0" *ngIf="data?.adesaAssuranceStatus" [data]="data"
+				[idUniqueField]="idUniqueField"></nw-file-claim>
+			<nw-arbitration-status class="col px-0" *ngIf="data?.arbitration?.status" [data]="data"
+				[idUniqueField]="idUniqueField"></nw-arbitration-status>
+		</div>
+	</div>
+	<div class="mb-3 overflow-auto"></div>
+</div>

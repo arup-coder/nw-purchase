@@ -1,0 +1,27 @@
+<div class="page-container ag-page-label text-decoration-none" *ngIf='PaginationPages !={}' id="pagination_view">
+
+    <button type="button" class="btn btn-link purchases-btn-pagination" (click)="getFirstPage(0)" [disabled]="currentPage === 0" id="btn_first_pagination_view" >
+        First
+    </button>
+
+    <button type="button" class="btn btn-link purchases-btn-pagination" (click)="goToPrevious()" [disabled]="currentPage === 0" id="btn_left_arrow_pagination_view" >
+        <img src="{{paginationLeftArrowImg}}" id="img-left-arrow-icon" alt="{{paginationLeftArrowLbl}}" class="purchases-btn-pagination"/>
+    </button>
+
+    <span *ngFor="let page of PaginationPages.pages" class="purchases-btn-pagination">
+        <button type="button" class="btn btn-link" (click)="goToPage(page-1)" [ngClass]="(currentPage === page-1)? 'purchases-btn-page-selected' : 'purchases-btn-pagination'" id="{{'btn_'+ page + '_pagination_view' }}">
+            {{page}}
+        </button>
+    </span>
+
+    <button type="button" class="btn btn-default purchases-btn-pagination" (click)="goToNext()"
+        [disabled]="currentPage === PaginationPages.totalPages-1" id="btn_right_arrow_pagination_view">
+        <img src="{{paginationRightArrowImg}}" id="img-right-arrow-icon" alt="{{paginationRightArrowLbl}}" class="purchases-btn-pagination"/>
+    </button>
+
+    <button type="button" class="btn btn-link purchases-btn-pagination" (click)="getLastPage(PaginationPages.totalPages-1)"
+        [disabled]="currentPage === PaginationPages.totalPages-1" id="btn_last_pagination_view">
+        Last
+    </button>
+
+</div>

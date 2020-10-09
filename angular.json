@@ -1,0 +1,134 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"version": 1,
+	"newProjectRoot": "projects",
+	"projects": {
+		"nw-ui-mfe-purchases": {
+			"projectType": "application",
+			"schematics": {
+				"@schematics/angular:component": {
+					"styleext": "scss"
+				}
+			},
+			"root": "",
+			"sourceRoot": "src",
+			"prefix": "app",
+			"architect": {
+				"build": {
+					"builder": "ngx-build-plus:build",
+					"options": {
+						"outputPath": "lib",
+						"index": "src/index.html",
+						"deployUrl":  "/apps/purchases/",
+						"main": "src/main.ts",
+						"polyfills": "src/polyfills.ts",
+						"tsConfig": "tsconfig.app.json",
+						"aot": true,
+						"assets": ["src/favicon.ico", "src/assets"],
+						"styles": ["src/styles.scss"],
+						"scripts": [{
+							"input": "node_modules/document-register-element/build/document-register-element.js"
+						}],
+						"es5BrowserSupport": true,
+						"outputHashing": "all",
+						"lazyModules": [
+							"src/app/view/vehicle-desktop/vehicle.module",
+							"src/app/view/vehicle-mobile/vehicle.module"
+						]
+					},
+					"configurations": {
+						"production": {
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.prod.ts"
+								}
+							]
+                        }
+					}
+				},
+				"serve": {
+					"builder": "ngx-build-plus:dev-server",
+					"options": {
+						"browserTarget": "nw-ui-mfe-purchases:build"
+					},
+					"configurations": {
+						"production": {
+							"browserTarget": "nw-ui-mfe-purchases:build:production"
+						}
+					}
+				},
+				"extract-i18n": {
+					"builder": "@angular-devkit/build-angular:extract-i18n",
+					"options": {
+						"browserTarget": "nw-ui-mfe-purchases:build"
+					}
+				},
+				"test": {
+					"builder": "ngx-build-plus:karma",
+					"options": {
+						"main": "src/test.ts",
+						"polyfills": "src/polyfills.ts",
+						"tsConfig": "tsconfig.spec.json",
+						"karmaConfig": "karma.conf.js",
+						"assets": ["src/favicon.ico", "src/assets"],
+						"styles": ["src/styles.scss"],
+						"scripts": [],
+						"codeCoverageExclude": [
+							"src/polyfills.ts",
+							"src/app/view/core/filter-left/filter-left.component.ts",
+							"src/app/data-store/store.ts",
+							"src/app/shared/services/auth-http-interceptor.ts",
+							"src/app/api/api-mapper/get-vehicle-mapper.ts",
+							"src/app/api/api-mapper/get-vehicle-mapper.ts",
+							"src/app/api/api-mapper/vehicle/vehicle-mapper.ts",
+							"src/app/api/api-mapper/vehicle/status-mapper.ts",
+							"src/app/api/api-mapper/vehicle/buyer/buyer-mapper.ts",
+							"src/app/api/api-mapper/vehicle/lineitem-group/lineitem-groups-mapper.ts",
+							"src/app/api/api-mapper/vehicle/lineitem-group/lineitem-mapper.ts",
+							"src/app/api/api-mapper/vehicle/lineitem-group/tax-mapper.ts",
+							"src/app/api/api-mapper/vehicle/psi/psi-mapper.ts",
+							"src/app/api/api-mapper/vehicle/psi/psi-options-mapper.ts",
+							"src/app/api/api-mapper/vehicle/purchase/location-mapper.ts",
+							"src/app/api/api-mapper/vehicle/purchase/purchase-mapper.ts",
+							"src/app/api/api-mapper/vehicle/purchase/purchase-metadata-info-mapper.ts",
+							"src/app/api/api-mapper/vehicle/title/shipping-info-mapper.ts",
+							"src/app/api/api-mapper/vehicle/title/title-mapper.ts",
+							"src/app/api/api-mapper/vehicle/type-converter/cents-to-dollar-converter.ts",
+							"src/app/api/api-mapper/vehicle/type-converter/date-converter.ts",
+							"src/app/api/api-mapper/vehicle/vehicle-metadata/odometer-mapper.ts",
+							"src/app/api/api-mapper/vehicle/vehicle-metadata/vehicle-metadata-mapper.ts",
+							"src/app/api/api-mapper/vehicle/arbitration/arbitratin-mapper.ts",
+							"src/app/api/api-mapper/vehicle/assurance/assurance-mapper.ts",
+							"src/app/api/api-mapper/vehicle/assurance/assurance-status-mapper.ts",
+							"src/app/api/api-mapper/vehicle/type-converter/null-undefined-to-string-converter.ts",
+							"src/app/api/api-mapper/vehicle/buyer-or-org/buyer-mapper.ts",
+							"src/app/api/api-mapper/vehicle/pdi/pdi-mapper.ts",
+							"src/app/shared/class/vehicle-export-mapper.ts"
+						]
+					}
+				},
+				"lint": {
+					"builder": "@angular-devkit/build-angular:tslint",
+					"options": {
+						"tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
+						"exclude": ["**/node_modules/**"]
+					}
+				},
+				"nw-ui-mfe-purchases-e2e": {
+					"builder": "@angular-devkit/build-angular:protractor",
+					"options": {
+						"protractorConfig": "e2e/protractor.conf.js",
+						"devServerTarget": "nw-ui-mfe-purchases:serve"
+					},
+					"configurations": {
+						"production": {
+							"devServerTarget": "nw-ui-mfe-purchases:serve:production"
+						}
+					}
+				}
+			}
+		}
+	},
+	"defaultProject": "nw-ui-mfe-purchases"
+}

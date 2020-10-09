@@ -1,0 +1,33 @@
+
+.details-wrapper {
+	margin: 0.9em 0 0 0;
+
+	.inner-wrapper {
+		justify-content: center;
+
+		.details-span {
+			margin-left: 0.5em;
+			margin-top: 4px;
+			line-height: 14px;
+			h6 {
+				margin-bottom: 6px;
+			}
+			p {
+				margin-bottom: 6px;
+			}
+		}
+
+		.run-lane-seperator {
+			color: #00838f;
+			padding-left: 0px 10px;
+		}
+
+		.address {
+			line-height: 18px;
+			margin-bottom: 0 !important;
+		}
+	}
+}
+.seperator-div {
+	border-top: 1px solid #c3c3c3;
+}

@@ -1,0 +1,48 @@
+<div
+	class="col-sm-12 row details-wrapper px-0"
+	id="{{ data[idUniqueField] + '_finance-details' }}">
+	<div class="col row inner-wrapper p-0 overflow-hidden">
+		<div class="d-sm-flex col-sm-12 px-0">
+			<span class="fee-img"> <img src="{{ feesImg }}" [attr.alt]="vehicleAltLabels.feesDetails" id="{{ data[idUniqueField] + '_finance-details_img' }}" /> </span>
+			<span class="col-sm-12 row px-0 ml-2">
+				<span class=" col-sm-10 px-0 pb-2 row" id="{{ data[idUniqueField] + '_finance-details_header' }}">
+					<div *ngFor="let column of columns" class="col-sm-4 pr-2 pl-0">
+						<h6 class="font-wt-500" id="{{ data[idUniqueField] + '_' + 'header' + '_' + column.header }}" 
+							*ngIf="!(column.header == 'TAX' && isUsRegion)">
+							{{ column.header }}
+						</h6>
+					</div>
+				</span>
+				<span
+					class="col-sm-10 row px-0 pt-2 seperator"
+					*ngFor="let lineItem of lineItems; let i = index"
+					id="{{ getCellId(data[idUniqueField], lineItem.lineItemDescription, '_row') }}"
+				>
+					<div class="col-sm-4 pr-2 pl-0" *ngFor="let column of columns">
+						<span *ngIf="column.type !== 'array' && column.type === 'status'">
+							<div id="{{ getCellId(data[idUniqueField], lineItem.lineItemDescription, column.header) }}" *ngIf="lineItem[column.field] === 'unpaid'"  class="line-item-due">
+								Due
+							</div>
+							<div id="{{ getCellId(data[idUniqueField], lineItem.lineItemDescription, column.header) }}" *ngIf="lineItem[column.field] === 'PAID'" class="line-item-paid">
+								Paid
+							</div>
+						</span>
+						<span *ngIf="column.type !== 'array' && column.type !== 'status'"
+							><h6 class="line-items-text" id="{{ getCellId(data[idUniqueField], lineItem.lineItemDescription, column.header) }}">
+								{{ lineItem[column.field] | TypeConverter: column.type }}
+							</h6></span
+						>
+						<span *ngIf="column.type === 'array' && !(column.header == 'TAX' && isUsRegion)">
+							<h6 class="line-items-text"
+								id="{{ getCellId(data[idUniqueField], lineItem.lineItemDescription, column.header + '_' + index) }}"
+								*ngFor="let tax of lineItem[column.field]; let index = index"
+							>
+								{{ tax[column.childColumns.field] | TypeConverter: column.childColumns.type }}
+							</h6></span
+						>
+					</div>
+				</span>
+			</span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+{
+    "/static-components/**": {
+        "target": "https://us-east-1-testdev.nw.adesa.com/",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/mfe/*.css": {
+        "target": "https://us-east-1-testdev.nw.adesa.com/",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

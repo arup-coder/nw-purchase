@@ -1,0 +1,21 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+%inline-flex-nowrap {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+%text-light-blue {
+    color: #027abb !important;
+}
+
+%bold {
+    font-weight: bold !important;
+} 
+
+%text-center {
+    text-align: center !important;
+}

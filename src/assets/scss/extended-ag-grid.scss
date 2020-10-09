@@ -1,0 +1,153 @@
+// AG Grid stuff starts here
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-material/sass/_ag-theme-material-mixin.scss";
+@import "./placeholders";
+@import "./variables";
+@import "./mixins";
+
+.ag-theme-material {
+  @include ag-theme-material((
+    // use theme parameters where possible
+    font-family: Heebo,
+    foreground-color : #000000
+  ));
+}
+// AG GRID STYLING
+.default-sort-icon {
+  content: "";
+  background: url(/apps/purchases/assets/icon/24px/scroll-up.svg) no-repeat 0 0;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: -10px;
+}
+.ag-header-cell-sorted-desc .ag-header-cell-text, .ag-header-cell-sorted-asc .ag-header-cell-text {
+  color: #0075BE;
+}
+.ag-column-hover {
+  background-color: transparent !important;
+}
+
+.ag-checkbox-input-wrapper {
+  background: none;
+}
+
+.ag-checkbox-input-wrapper::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  content: '' !important;
+  background: url(/apps/purchases/assets/icon/24px/unchecked-checkbox.svg) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+}
+.ag-checkbox-input-wrapper.ag-checked::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  content: '' !important;
+  background: url(/apps/purchases/assets/icon/24px/checked-checkbox.svg) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+}
+.ag-checkbox-input-wrapper.ag-indeterminate::after {
+  content: '\f068';
+  color: gray;
+}
+.ag-row .ag-selection-checkbox, .ag-header-row .ag-header-select-all{
+  padding-left: 1em;
+}
+.ag-theme-material .ag-header {
+  border: none;
+}
+
+// Overriding default AG Grid styling here
+.ag-theme-material {
+  .ag-header-row {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .ag-pinned-left-header {
+    border: none;
+  }
+  .ag-header-cell-label .ag-header-cell-text {
+    white-space: pre;
+  }
+  .ag-header-group-cell-label,
+  .ag-header-cell-label {
+    align-items: flex-end;
+  }
+  .ag-header-cell {
+    align-items: flex-end;
+    padding-bottom: 0.7rem;
+  }
+  .ag-checkbox-input-wrapper.ag-checked::after {
+    color: $header-blue !important;
+  }
+  .ag-header-cell,
+  .ag-header-group-cell {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .ag-cell {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: none !important;
+    user-select: initial;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+  }
+  .ag-icon-desc:before {
+    content: "";
+    background: url(/apps/purchases/assets/icon/24px/blue-down-crt.svg) no-repeat 0 0;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+  }
+  .ag-icon-desc {
+    vertical-align: super;
+    display: inline-block;
+  }
+  .ag-icon-asc:before {
+    content: "";
+    background: url(/apps/purchases/assets/icon/24px/blue-up-crt.svg) no-repeat 0 0;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+  }
+  .ag-icon-asc {
+    vertical-align: super;
+    display: inline-block;
+  }
+  .ag-root-wrapper {
+    display: block;
+    overflow: unset;
+  }
+  .ag-root {
+    display: block;
+    overflow: unset;
+  }
+  .ag-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .ag-checkbox-input-wrapper:focus-within,
+  .ag-checkbox-input-wrapper:active {
+    box-shadow: none;
+  }
+  .ag-row-selected {
+    background-color: unset;
+  }
+  .ag-row-hover {
+    background-color: #ffffff !important;
+  }
+  .ag-row-group-expanded {
+    background-color: #0288d112 !important;
+  }
+  .text-break {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+}

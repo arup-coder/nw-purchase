@@ -1,0 +1,54 @@
+@import "./../../../../../src/assets/scss/variables";
+@import "./../../../../../src/assets/scss/mixins";
+
+.expand-cell {
+	justify-content: center;
+}
+
+.tr-bottom-border {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.row-expanded {
+	@include border-left-transition($text-blue);
+}
+
+.row-unexpanded {
+	@include border-left-transition();
+}
+
+:host ::ng-deep .ui-table-thead .content-th {
+	align-items: flex-end;
+}
+
+.sticky-top {
+	z-index: 1;
+}
+
+:host ::ng-deep nw-custom-cell .link {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-height: 18px;
+	max-height: 36px;
+}
+.purchases-btn-toggle-all {
+	color: inherit;
+}
+
+.pagination-wrapper{
+	text-align:center;
+	padding-top:38px;
+}
+
+.pagination-indentation{
+	display: inline-block;
+}
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
+ }
+

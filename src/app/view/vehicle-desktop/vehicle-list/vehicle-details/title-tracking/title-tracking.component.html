@@ -1,0 +1,21 @@
+<div
+	class="col px-0 overflow-hidden details-wrapper"
+	id="{{ data[idUniqueField] + '_title-tracking' }}"
+>
+		<div class="col px-0 d-sm-flex">
+			<span> <img src="{{ titleTrackingImg }}" [attr.alt]="vehicleAltLabels.titleTrackingImg" id="{{ data[idUniqueField] + '_title-tracking_img' }}" /> </span>
+
+				<div class="pr-2 col pl-0 ml-2 tracking-wrapper">
+					<h6 class="font-wt-500 mb-1" id="{{ data[idUniqueField] + '_title-tracking_header' }}">
+						{{ headTitle?.titleTracking }}
+					</h6>
+					<!-- Case: status == 'Shipped' -->
+					<p class="mb-1" id="{{ data[idUniqueField] + '_title-tracking_date' }}" *ngIf="data.titleStatus && data.titleStatus.status && data.titleStatus.status == titleStatus.SHIPPED">{{ titleStatusUi.SHIPPED }} &nbsp;{{data?.titleStatus?.statusDate}}</p>
+					<p class="mb-0 color-slight-black text-break" *ngIf="data.titleStatus && data.titleStatus.status && data.titleStatus.status == titleStatus.SHIPPED && data.titleStatus.shippingCarrier" 
+						id="{{ data[idUniqueField] + '_title-tracking_shipping' }}">{{data?.titleStatus?.shippingCarrier}} &nbsp;{{data?.titleStatus?.shippingTrackingNumber}}</p>
+					
+					<!-- Case: status != 'Shipped' -->
+					<p class="mb-1" id="{{ data[idUniqueField] + '_title-tracking_date' }}" *ngIf="!(data.titleStatus && data.titleStatus.status && data.titleStatus.status == titleStatus.SHIPPED)">{{ titleStatusUi.NOT_ORDERED }}</p>
+				</div>
+    </div>
+</div>

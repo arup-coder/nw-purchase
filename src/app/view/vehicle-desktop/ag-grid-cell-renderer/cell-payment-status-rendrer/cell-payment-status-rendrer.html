@@ -1,0 +1,9 @@
+<div>
+
+    <div class="ps-div" [ngClass]="statusBoxCSS" *ngIf="status !=''">
+       <span class="ps-text ps-status-text"  id="{{vin + '_payment-status'}}">{{status}}</span> 
+    </div>
+    <p class="ps-text ps-balance" *ngIf="balance !=''" id="{{vin + '_payment-balance'}}">{{balance}} balance</p>
+
+</div>
+

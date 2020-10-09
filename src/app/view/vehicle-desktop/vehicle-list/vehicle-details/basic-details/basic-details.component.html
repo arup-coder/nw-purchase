@@ -1,0 +1,97 @@
+<div class="col-sm-12 row details-wrapper px-0 pt-2" id="{{ data[idUniqueField] + '_basic-details' }}"
+	*ngIf="data != null">
+	<div class="col-sm-4 row d-sm-flex p-0">
+		<div class="d-sm-flex col-sm-12 px-0">
+			<span>
+				<img src="{{ vehicleInfoImg }}" [attr.alt]="vehicleAltLabels.vehicleDetails"
+					id="{{ data[idUniqueField] + '_vehicle-details_img' }}" />
+			</span>
+			<span class="details-span col-sm-12 px-0">
+				<h6 class="font-wt-500" id="{{ data[idUniqueField] + '_vehicle-details_label' }}">
+					{{ headTitle.vehicleDetails}}</h6>
+				<p id="{{ data[idUniqueField] + '_vin' }}">{{ data?.vin }}</p>
+				<div class="col-sm-12 row m-0 p-0">
+					<div class="col-sm-4 p-0">
+						<p id="{{ data[idUniqueField] + '_odometer_label' }}">Odometer: </p>
+					</div>
+					<div class="col-sm-8 p-0">
+						<p class="col-sm-12 p-0">
+							<span id="{{ data[idUniqueField] + '_odometer_value' }}">{{ data?.odometer }}</span>
+							&nbsp;<span
+								id="{{ data[idUniqueField] + '_odometer-unit-of-measure' }}">{{ data?.odometerUnitOfMeasure }}</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 row m-0 p-0">
+					<div class="col-sm-4 p-0">
+						<p id="{{ data[idUniqueField] + '_exterior-color_label' }}">Exterior: </p>
+					</div>
+					<div class="col-sm-8 p-0">
+						<p class="col-sm-12 p-0 text-break" id="{{ data[idUniqueField] + '_exterior-color_value' }}">
+							{{ data?.exteriorColor }}</p>
+					</div>
+				</div>
+				<div class="col-sm-12 row m-0 p-0">
+					<div class="col-sm-4 p-0">
+						<p id="{{ data[idUniqueField] + '_interior-color_label' }}">Interior: </p>
+					</div>
+					<div class="col-sm-8 p-0">
+						<p class="col-sm-12 p-0 text-break" id="{{ data[idUniqueField] + '_interior-color_value' }}">
+							{{ data?.interiorColor }}</p>
+					</div>
+				</div>
+			</span>
+		</div>
+	</div>
+	<div class="col-sm-4 row d-sm-flex p-0">
+		<div class="d-sm-flex">
+			<span>
+				<img src="{{ purchaseDetailsImg }}" [attr.alt]="vehicleAltLabels.purchaseDetails"
+					id="{{ data[idUniqueField] + '_purchase-details_img' }}" />
+			</span>
+			<span class="details-span">
+				<h6 class="font-wt-500" id="{{ data[idUniqueField] + '_purchase-details' }}">
+					{{ headTitle.purchaseDetails}}</h6>
+				<p class="text-break" id="{{ data[idUniqueField] + '_buyerOrganization-name' }}">
+					{{ data?.buyerOrganizationName }}</p>
+				<p class="text-break" id="{{ data[idUniqueField] + '_purchaser-first-name_purchaser-last-name' }}">
+					{{ data?.buyerName }}
+				</p>
+			</span>
+		</div>
+	</div>
+	<div class="col-sm-4 row d-sm-flex p-0" [class.invisible]="!data?.location || data?.location == null">
+		<div class="d-sm-flex">
+			<span> <img src="{{ locationImg }}" [attr.alt]="vehicleAltLabels.locationDetails"
+					id="{{ data[idUniqueField] + '_location_img' }}" /> </span>
+			<span class="details-span">
+				<h6 class="font-wt-500" id="{{ data[idUniqueField] + '_location' }}">{{ headTitle.location}}</h6>
+				<span *ngIf="hideLocation">
+					<p id="{{ data[idUniqueField] + '_state' }}">{{ data?.location?.state }}</p>
+					<p id="{{ data[idUniqueField] + '_hiddenLocation' }}" class="hidden-location">
+						{{hiddenLocationText}}</p>
+				</span>
+				<span *ngIf="!hideLocation">
+					<p id="{{ data[idUniqueField] + '_location-name' }}">{{ data?.location?.locationName }}</p>
+					<p class="address" id="{{ data[idUniqueField] + '_address' }}">{{ data?.location?.address }}</p>
+					<p *ngIf="data?.location?.city != '' && data?.location?.state != '' && data?.location?.zip != ''">
+						<span *ngIf="data?.location?.city != ''" id="{{ data[idUniqueField] + '_city' }}">{{
+						data?.location?.city + ',' 
+					}}</span>&nbsp;<span id="{{ data[idUniqueField] + '_state' }}">{{ data?.location?.state }}</span>&nbsp;<span
+							id="{{ data[idUniqueField] + '_zip' }}">{{ data?.location?.zip }}</span>
+					</p>
+					<p id="{{ data[idUniqueField] + '_phone-number' }}">{{ data?.location?.phoneNumber }}</p>
+					<span class="col-sm-12 row m-0 px-0"
+						*ngIf="(data?.lbRunNumber || data?.lbLaneNumber) && data?.auctionChannelValue == localSalesChannel.SIMULCAST">
+						<span class="" *ngIf="data?.lbRunNumber" id="{{ data[idUniqueField] + '_lb-run-number' }}">Run
+							#: {{ data?.lbRunNumber }}</span>
+						<span *ngIf="data?.lbRunNumber && data?.lbLaneNumber" class="run-lane-seperator"
+							id="{{ data[idUniqueField] + '_lb-run-number_lb-lane-number_seperator-line' }}">|</span>
+						<span class="" *ngIf="data?.lbLaneNumber"
+							id="{{ data[idUniqueField] + '_lb-lane-number' }}">Lane: {{ data?.lbLaneNumber }}</span>
+					</span>
+				</span>
+			</span>
+		</div>
+	</div>
+</div>

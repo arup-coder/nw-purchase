@@ -1,0 +1,42 @@
+
+.page-container {
+    padding-top: 30px;
+}
+
+.ag-page-label{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #0288D1;
+    outline: none;
+    box-shadow: none;
+}
+
+.purchases-btn-page-selected
+{
+    background: #0288D1;
+    border: 1px solid #0288D1;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    outline: none;
+    box-shadow: none;
+    
+}
+
+.purchases-btn-pagination {
+font-weight: normal;
+color: #0288D1;
+outline: none;
+box-shadow: none;
+font-size: 14px;
+line-height: 16px;
+}
+
+button
+{text-decoration: none !important;}

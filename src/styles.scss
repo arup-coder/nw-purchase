@@ -1,0 +1,265 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Declare application variables here */
+
+@import "../node_modules/material-icons/css/material-icons.scss";
+@import "./assets/scss/extended-bootstrap.scss";
+@import "./assets/scss/variables";
+@import "./assets/scss/mixins";
+@import "./assets/scss/placeholders";
+@import "./assets/fonts/material-icons.css";
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.no-focus-outline div:focus,
+.no-focus-outline li:focus,
+.no-focus-outline h1:focus {
+	outline: none;
+}
+
+body {
+	nw-root {
+		font-family: $font-family;
+		font-style: normal;
+		font-weight: normal;
+		color: $text-black;
+		@include text-style();
+		a {
+			color: $link-blue;
+			text-decoration: none !important;
+		}
+		.mo-input {
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+		h1 {
+			@include text-style(28px, 32px);
+			@extend %bold;
+			color: $headings-black;
+		}
+		h6 {
+			font-size: 14px;
+			line-height: $size-16;
+		}
+		.font-wt-700 {
+			font-weight: 700;
+		}
+		.font-wt-500 {
+			font-weight: 500;
+		}
+		.breadcrumb-section {
+			.breadcrumb {
+				@include text-style(12px);
+				background-color: #fff;
+				padding: 10px 0px;
+				margin: 0;
+			}
+			.breadcrumb-item a {
+				color: $text-blue;
+			}
+			.breadcrumb-item.active {
+				color: $text-blue;
+			}
+		}
+		nw-checkbox {
+			display: flex;
+		}
+
+		.main-content-section {
+			.ui-chkbox {
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+				width: $size-16;
+				height: $size-16;
+				.ui-chkbox-box {
+					background-color: $white;
+					width: $size-16;
+					height: $size-16;
+					@extend %text-center;
+					@include border-rounded($borderWidth: 1.5px, $borderColor: $border-gray);
+					.ui-chkbox-icon {
+						overflow: hidden;
+						position: relative;
+						font-size: 13px;
+						display: block;
+					}
+					&.ui-chkbox-box.ui-state-active {
+						border-color: $header-blue;
+						background-color: $header-blue;
+						color: $white;
+						width: $size-16;
+						height: $size-16;
+					}
+					&.ui-widget.ui-state-default.ui-state-active:before {
+						content: "";
+						background: url(/apps/purchases/assets/icon/16px/checkbox-tick.png) no-repeat 0 0;
+						position: absolute;
+						width: 18px;
+						height: 18px;
+						margin-left: -5px;
+						margin-top: 3px;
+					}
+					&.ui-widget.ui-state-default.ui-state-active span {
+						display: none;
+					}
+				}
+			}
+			.ui-chkbox-label {
+				margin: 0 0 0 0.5em;
+			}
+			.ui-widget {
+				@include text-style();
+				text-decoration: none;
+			}
+		}
+		.opacity-50 {
+			opacity: 0.5;
+		}
+		.color-slight-black {
+			color: #272d33;
+		}
+		.f-wt-500 {
+			font-weight: 500;
+		}
+		
+    .error-gvapi-wrapper {
+      min-height: 60vh;
+      font-family: $font-family;
+      font-style: normal;
+      text-align: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      .text-format {
+        letter-spacing: -0.22px;
+        color: $text-black;
+        margin-bottom: 18px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      p.mainTitle {
+        font-size: 28px;
+      }
+      p.subTitle {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .error-image {
+        width: 60px;
+        position: relative;
+        height: 50px;
+      }
+		}
+		
+    .empty-gvapi-wrapper {
+      min-height: 60vh;
+      font-family: $font-family;
+      font-style: normal;
+      text-align: center;
+      margin-right: -15px;
+      margin-left: -15px;
+      .text-format {
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.22px;
+        color: $text-gray;
+        margin-bottom: 18px;
+      }
+      p.mainTitle {
+        font-size: 28px;
+      }
+      p.subTitle {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      button {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.25px;
+        background: $bg-light-blue;
+        border-radius: 4px;
+        height: 40px;
+        width: 218px;
+      }
+    }
+	}
+	nw-checkbox {
+		display: flex;
+	}
+}
+
+.ps-div {
+    position: absolute;
+    left: 5%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    height: 18px;
+    width: 81px;
+}
+
+.ps-text {
+    font-family: Heebo;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.ps-status-text {
+    position: absolute;
+    left: 34.57%;
+    right: 35.8%;
+    top: -1%;
+    bottom: 0%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ps-balance {
+    position: absolute;
+    font-weight: normal;
+    color: #000000;
+    padding-top:4px
+}
+
+.ps-due {
+    background: #FFC827;
+    border: 1.5px solid #FFC827;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.ps-paid {
+    background: #00838F;
+    border: 1.5px solid #00838F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+    
+.ps-void {
+    background: #D0130F;
+    border: 1px solid #D0130F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+
+.ps-void-due {
+    background: #FFFFFF;
+    border: 1px solid #D0130F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #D0130F;
+}
+ 

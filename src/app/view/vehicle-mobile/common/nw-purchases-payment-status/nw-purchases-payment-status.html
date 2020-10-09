@@ -1,0 +1,7 @@
+<div class="payment-status-wrapper">
+   <div class="ps-div-mobile mt-0" [ngClass]="statusBoxCSS" *ngIf="status !=''">
+       <span class="ps-text"  id="{{vin + '_payment-status'}}">{{status}}</span> 
+    </div>
+    <p class="ps-text ps-balance" *ngIf="balance !='' && showBalance" id="{{vin + '_payment-balance'}}">{{balance}} balance</p>
+</div>
+

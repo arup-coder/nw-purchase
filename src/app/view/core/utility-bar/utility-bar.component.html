@@ -1,0 +1,11 @@
+<div class="utility-wrapper">
+  <div class="col d-flex justify-content-start"> 
+    <div class="form-selector"></div>
+    <div class="country-selector"></div>
+  </div>
+  <div class="col d-flex justify-content-end">
+    <div class="page-selector"></div>
+    <!--<button class="btn-print btn-utility"><img class="img-print img-utility" src="{{ IMAGE_PATH.printIcon }}"/></button>-->
+    <button class="purchases-btn-export"><img class="img-export img-utility" (click)="initExport.emit(exportType)" class="purchases-btn-export-img" src="{{ IMAGE_PATH.exportIcon }}"/></button>  
+  </div>
+</div>

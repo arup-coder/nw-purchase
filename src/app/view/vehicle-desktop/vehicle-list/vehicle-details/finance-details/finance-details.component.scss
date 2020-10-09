@@ -1,0 +1,31 @@
+@import "./../../../../../../assets/scss/mixins";
+@import "./../../../../../../assets/scss/variables";
+
+.seperator {
+	border-top: 1px solid #f3f3f3;
+}
+.line-item-due {
+	@include border-rounded($radius: 10px, $borderWidth: 1.5px, $borderColor: #ffc827);
+	@include button-style($bgColor: #ffc827, $color: #000000);
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 18px;
+	width: 64px;
+	text-align: center;
+}
+
+.line-item-paid {
+	@include border-rounded($radius: 10px, $borderWidth: 1.5px, $borderColor: #00838f);
+	@include button-style($bgColor: #00838f, $color: #ffffff);
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 18px;
+	width: 64px;
+	text-align: center;
+}
+
+:host ::ng-deep .line-items-text {
+	font-weight: normal;
+	color: $black;
+	line-height: $size-18;
+}

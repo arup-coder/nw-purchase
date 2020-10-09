@@ -1,0 +1,8 @@
+<div class="nw-skeleton-wrapper" id="nw-skeleton-data-grid-wrapper">
+  <div *ngFor="let item of mockRow; let iRow = index;" class="nw-skeleton-data-grid-row d-flex justify-content-center align-items-center" [id]="'nw-skeleton-data-grid-row-'+iRow">
+      <ng-container *ngIf="skeletonTemplate=='nw'">
+          <div *ngFor="let col of mockColumn; let iCol = index;" class="nw-skeleton-col" [id]="'nw-skeleton-col-'+iCol"></div>
+      </ng-container>
+      <ngx-skeleton-loader *ngIf="skeletonTemplate=='ngx'" [count]="columnPerRow" appearance="circle"></ngx-skeleton-loader>
+  </div>
+</div>

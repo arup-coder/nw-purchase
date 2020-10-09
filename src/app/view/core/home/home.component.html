@@ -1,0 +1,81 @@
+<!-- Main content-->
+<div class="no-focus-outline container-fluid main-content-section mt-4 mo-section section-3" [ngClass]="{
+	'card-details-padding': (currentModule == 'mobile' && showCardDetailsView)
+}">
+	<!-- Alerts start from here -->
+
+	<!-- New vehicle alert -->
+	<nw-alert [config]="alertConfig" *ngIf="(recentPurchasedVehicleCount > 0) && !isErrorAlert && !isErrorState && !showBlankState && !isBrowserIE"
+		(acceptClick)="reloadVehicles()" (rejectClick)="ignoreNewVehicleUpdate()"></nw-alert>
+    <!-- More than 1000 vehicles loaded alert  -->
+	<nw-alert [config]="alertConfig" *ngIf="(totalRangeVehicleCount > maxVehicleLimit) && !isErrorAlert && !isErrorState && !showBlankState && !isBrowserIE" (rejectClick)="ignoreMaxVehicleLimit()"></nw-alert>	
+    <!-- Error alert -->
+	<nw-alert [config]="alertConfig" *ngIf="isErrorAlert && isErrorState && !showBlankState && !isBrowserIE && !(currentModule == 'mobile')" (reloadClick)="reloadVehicles()"></nw-alert>
+
+    <!-- Alerts end here -->
+
+	<!-- Header and utility wrapper -->
+	<!-- desktop header -->
+	<div class="row px-0 col-sm-12" *ngIf="currentModule != 'mobile'">
+		<div class="col-sm-6 px-0">
+			<header>
+				<nw-purchases-header></nw-purchases-header>
+			</header>
+		</div>
+		<!-- Utility bar -->
+		<div class="col-sm-6 px-0" *ngIf="!showBlankState && !isErrorState && !isBrowserIE">
+			<nw-purchases-utility-bar (initExport)="initExport($event)"></nw-purchases-utility-bar>
+		</div>
+	</div>
+
+	<!-- mobile header -->
+	<div class="row px-0 col-sm-12" *ngIf="currentModule === 'mobile'">
+		<div class="col px-0">
+			<header *ngIf="!showCardDetailsView">
+				<nw-purchases-mob-header></nw-purchases-mob-header>
+			</header>
+		</div>
+	</div>
+	<!-- Header and utility wrapper -->
+
+
+	<!-- Appears when showBlankState & isErrorState & isBrowserIE == false means empty response from API-->
+
+    <div class="row mt-2" *ngIf="!showBlankState && !isErrorState && !isBrowserIE">
+    
+        <!-- Left panel -->
+		<aside class="d-none d-mxl-block col-mxl-2 left-panel pr-4 pl-0" >
+			<!-- Filter component -->
+			<nw-purchases-filter-left [config]="filtersConfig" *ngIf="filtersConfig"
+				(filterEmitted)="filterOutputEventHandler($event)"></nw-purchases-filter-left>
+		</aside>
+        
+        <!-- Right panel -->
+		<section class="col right-panel px-0" >
+			<!-- Chip component -->
+			<div>
+				<nw-chips *ngIf="!(currentModule == 'mobile')" [freeze]="freeze" [chipData]="chipData" [newChip]="newChip" (onChipRemove)="chipRemovedEventHandler($event)" [chipContainerHeading]="chipContainerHeading"></nw-chips>
+			</div>
+			<div>
+				<!-- Lazy loaded module for mobile and desktop -->
+				<ng-container loadModule="{{currentModule}}" (onModuleLoaded)="onLazyloadModuleAdded($event)">
+				</ng-container>
+			</div>
+		</section>
+
+    </div>    
+
+	<!-- States start from here -->
+
+	<!-- Blank state component for empty response -->
+	<nw-purchases-blankstate *ngIf="showBlankState && !isBrowserIE && !showLoader && !isErrorState"></nw-purchases-blankstate>
+
+	<!-- Error state component for HttpResponse error -->
+	<nw-error-state [config]="errorStateConfig" *ngIf="isErrorState"></nw-error-state>
+
+	<!-- IE browser update state -->
+	<nw-browser-warning *ngIf="isBrowserIE"></nw-browser-warning>
+
+	<!-- States end here -->
+
+</div>

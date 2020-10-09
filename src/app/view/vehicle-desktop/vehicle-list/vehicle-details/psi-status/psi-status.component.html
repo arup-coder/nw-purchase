@@ -1,0 +1,14 @@
+<div
+   class="col px-0 overflow-hidden details-wrapper"
+   id="{{ data[idUniqueField] + '_psi-status-wrapper' }}"
+   >
+   <div class="col px-0 d-sm-flex">
+      <span> <img src="{{ psiStatusImg }}" [attr.alt]="vehicleAltLabels.psiStatusImg" id="{{ data[idUniqueField] + '_psi-status_img' }}" /> </span>
+      <div class="pr-2 col pl-0 ml-2 psi-wrapper">
+         <h6 class="font-wt-500 mb-1" id="{{ data[idUniqueField] + '_psi-status_header' }}">
+           {{ headTitle.psiStatus }}
+         </h6>
+         <p class="mb-1 color-slight-black" id="{{ data[idUniqueField] + '_psi-status' }}" [innerHtml]="psiStatus"></p>
+      </div>
+   </div>
+</div>

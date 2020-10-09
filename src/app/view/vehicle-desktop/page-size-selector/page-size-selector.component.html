@@ -1,0 +1,8 @@
+<div class="page-container" id="page_size_selector_view">
+
+<select class="page-gvapi-wrapper purchases-btn-page-selector select-no-focus select-no-radius"
+              (change)="onPageSelectorChange($event.target.value)" 
+              [(ngModel)]="selectedPageSize">
+    <option [value]="item.pageSize" *ngFor="let item of pageObjects" id="{{'opt_'+ item.pageSize + '_page_size_selector' }}" class="purchases-btn-pagination-option" >{{item.value}}</option>
+</select> 
+</div> 

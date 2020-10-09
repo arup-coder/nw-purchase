@@ -1,0 +1,42 @@
+<div class="vehicle-list-wrapper" tabindex="0" [hidden]="showLoader">
+
+	<ag-grid-angular 
+		class="ag-theme-material grid pt-2" 
+		style="width: 100%;" 
+		[gridOptions]="gridOptions"
+		[isExternalFilterPresent]="isFilterPresent"
+		[doesExternalFilterPass]="filterData"
+		[getRowHeight]="getRowHeight"
+		[modules]="modules"
+		[paginationPageSize]="paginationPageSize" 
+		(paginationChanged)="onPaginationChanged($event)"
+		[icons]="styling"
+	>
+	</ag-grid-angular>
+
+	<div class="row pagination-wrapper" tabindex="1" *ngIf="!isErrorState" id="ag-pagination">
+
+		<div class="col-2 col-md-2"></div>
+
+		<div class="col-8 col-md-8">
+		<div class="pagination-indentation" id="ag-grid-paginator">
+			<ag-grid-pagination [pageSize]="paginationPageSize" [gridApi]="gridOptions.api"
+				[noOfPages]="gridOptions.api?.paginationGetTotalPages()">
+			</ag-grid-pagination>
+		</div>
+	</div>
+
+		<div class="col-2 col-md-2 nopadding">
+		<div class="pagination-indentation" id="ag-grid-page-selector">
+			<ag-page-size-selector (pageSelectionChange)="pageSelectionOutputEventHandler($event)">
+			</ag-page-size-selector>
+		</div>
+	</div>
+		
+	</div>
+
+	<nw-error-state [config]="errorStateConfig" *ngIf="isErrorState"></nw-error-state>
+
+</div>
+
+<nw-skeleton-loader *ngIf="showLoader" [recordPerPage]="paginationPageSize"></nw-skeleton-loader>
